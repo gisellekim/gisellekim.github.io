@@ -1,0 +1,284 @@
+  /* default */	
+	  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+	  html,body {width: 100%; height: 100vh; position: relative;} 
+	  * {margin: 0; padding: 0; box-sizing:border-box;}
+	  body {font-family: 'open sans', sans-serif;}
+	  li {list-style:none;}
+	  a {text-decoration: none; color: #fff; }
+	  p {color: #fff; height: 32px; line-height: 32px; margin: 28px auto; font-size: 16px; }	
+	  #wrap {margin:0 auto; width: 100%; height: 100vh; /* overflow: hidden; */ position: relative;}
+	  #fullpage {position: absolute; left: 0; top: 0; width: 100%; height: 1200%;} 
+	  /* #speedomotor { float: left; width: 50px; height: 25px; background-repeat: no-repeat; background-size:contain; background-image:url("../Icon/speedomotor.svg");} */
+	  .slider {display: none;}
+	  article {
+		width: 100%; height: 100vh;
+		background-color:#000;
+		background-size: cover; 
+		background-repeat:no-repeat;
+		background-position:center center;
+		position: relative;
+		transition:all 0.3s;
+		overflow: hidden;
+	  }
+
+  /* logo & nav */
+	  .ver_text { position:absolute; right:-10%; top: 37%; z-index:999; transform:rotate(90deg); width: 880px; height: 250px;}
+	  #ver_logo { cursor:pointer; width: 880px; height: 88px; background: url("../Icon/tesla_logo_wh.svg") no-repeat; background-size:cover; }
+	  .ver_text .menu {text-align: left; margin: 28px 0 28px 0;}
+	  .ver_text .menu li:first-child a {padding-left:0;}
+	  .menu {margin: 28px auto; width: 720px; overflow: hidden; text-align: center; }
+	  .menu li {float: left;}
+	  .menu a {display: block; padding: 0 20px 4px; font-size: 16px; text-align: center; position: relative;}
+	  a:after {content:""; display: block; position:absolute; bottom:0; left: 0; width: 100%; height: 2px; background: rgba(255,255,255,0.5); z-index:99; transform:scale(0); transition:all 0.3s;}
+	  li:hover a:after {transform:scale(1);}
+	  .menu li:hover a {font-weight: bold;}
+
+	  .hor_text { position:absolute; top:2%; left:50%; width: 100%; height: 120px; margin-left: -50%; z-index:999; position: relative; }
+	  .hor_text p {text-align: center;}
+	  #hor_logo {cursor:pointer; width: 290px; height: 30px; background: url("../Icon/tesla_logo_wh.svg") no-repeat; background-size:contain;  margin:0 auto;}
+
+  /* product_info */ 
+   .detail_text {position:absolute; bottom:6%; left:calc( 50% - 300px ); width: 600px; height: 120px; }
+   .detail_text .topFeatures {display: none; font-weight: bold; color:#FFD200; font-size: 22px; text-align: center; margin: 0 auto; margin-bottom: 16px;}
+   .detail_text h2 {font-size: 24px; text-align: center; width: 100%; margin-bottom: 16px;}
+   .detail_text ul {overflow: hidden; width: 100%; height: 56px;}
+   .detail_text li {font-size: 20px; font-weight: bold; box-sizing:border-box; float: left; width: 200px; height: 56px; border-right: 1px solid #000; padding:0 20px; text-align: center; }
+   .detail_text li:last-child {border-right:0;}
+   .detail_text li b {font-weight: normal; font-size: 18px;}
+   #article4 .detail_text, #article5 .detail_text, #article8 .detail_text {color:#fff;}
+   #article4 .detail_text li, #article5 .detail_text li, #article8 .detail_text li {border-right:1px solid #fff;}
+   #article4 .detail_text li:last-child, #article5 .detail_text li:last-child, #article8 .detail_text li:last-child {border-right:0;}
+
+  /*background-image*/
+	  #article2 { background-image:url("../Image/all.jpg"); }
+	  #article3,#article9 { background: #000;}
+	  #article4 { background-image:url("../Image/models_r2_grey.jpg");}
+	  #article4.on, #article4:hover { background-image:url("../Image/models_r2.jpg");}
+	  #article5 { background-image:url("../Image/model3_r2_grey.jpg");}
+	  #article5.on, #article5:hover { background-image:url("../Image/model3_r2.jpg");}
+	  #article6 { background-image:url("../Image/modelx_w3_grey.jpg");}
+	  #article6.on, #article6:hover { background-image:url("../Image/modelx_w3.jpg");}
+	  #article7 { background-image:url("../Image/modely_b_back_grey.jpg");}
+	  #article7.on, #article7:hover { background-image:url("../Image/modely_b_back.jpg");}
+	  #article8.on, #article8:hover { background-image:url("../Image/roadster5.jpg");}
+	  #article8 { background-image:url("../Image/roadster5_grey.jpg");}
+	  #article10 { background-image:url("../Image/charge_grey.jpg");}
+	  #article10.on, #article10:hover { background-image:url("../Image/charge.jpg");}
+	  #article11 { background-image:url("../Image/chargin_solar_grey.jpg");}
+	  #article11.on, #article11:hover { background-image:url("../Image/chargin_solar.jpg");}
+	  #footer {background: #000;}
+
+  /* article1 */
+  	  #article1 {background: #000;}
+	  #article1 iframe { position: absolute; left:50%;top:50%; transform:translate(-50%, -50%);width: 150%; height: 150%; position: relative; }
+	  #article1:after{content:""; position:absolute; left:0; top:0; z-index:9; width: 100%; height: 100%; }
+	  #article1 span {display: block; font-size:20px; margin:10px auto; color: #fff;}
+	  #article1 .upgrade {overflow: hidden; width: 650px;}
+	  #article1 .upgrade li{ float: left;}
+	  #article1 .upgrade a{ display: block; color: #fff; font-size: 18px; padding: 0 8px; min-height: 28px; height: 28px; position:relative; text-align: center;}
+	  #article1 .upgrade a.pl0 {padding: 0 5px 0 0;}
+	  
+  /* article2 */
+	  #article2 h2{ color: #fff; font-size: 48px; text-align: center; margin-top: 3%; text-shadow:0 0 10px rgba(255,255,255,0.5);}
+	  #article2 .slide {background-image:url("../Image/all.jpg"); background-size:310%; /* position: absolute; left: 0; top: 0; */ }
+	  #article2 #slide1 { background-position:10% 60%; }
+	  #article2 #slide2 { background-position:center 60%; }
+	  #article2 #slide3 { background-position:90% 60%; }
+	  /* #article2 #section0 {width: 100%; height: 100%; position:absolute; left:100%; top:0; transition:all 0.3s; background-repeat:no-repeat; background-size:200% 200%; background-position:center center; background-image:url("../Image/all.jpg"); } */
+	  /* #article2 #section1 {background-position:left center;}
+	  #article2 #section2 {background-position:right center;} */
+	  /* #article2 input {display: none;}
+	  #article2 section {width: 100%; height: 100%;}
+	  #article2 label {cursor:pointer; display:inline-block; width: 16px; height: 16px; background:rgba(255,255,255,0.5); border-radius:50%;  border:0; position:absolute; bottom:5%; left:48%;}
+	  #article2 #label2 {left:50%;}
+	  #article2 #label3 {left:52%;}
+	  #article2 input:checked + label {background:rgba(255,255,255,1);} */
+ 
+  /* article3 */
+	  #article3 section {width: 75%; height: 920px; margin-left:8%; box-sizing:border-box;}
+	  #article3 figure {width: 30%; height: 374px; float: left; margin-right: 1%; cursor:pointer; margin-top: 2%; transition:all 0.5s;}
+	  #article3 figure p {text-align: center; margin-bottom: -8px;}
+	  #article3 figcaption p {margin-top:4px;}
+	  #article3 figure h5 {font-size: 20px; color:#fff; margin:0 auto; margin-bottom: 12px; text-align: center; }
+	  #article3 figure h5:hover {animation:bounce 0.5s 0.2s infinite linear alternate; }
+	  #article3 figure:last-child { margin-right: 0;}
+	  #article3 figure.small_1st {width: 45%; height: 502px; margin:0 2% 1% 0; margin-top: 2%; transition:all 0.5s;}
+	  #article3 figure.small_1st:last-child { margin-right: 0;}
+	  #article3 figure.small_1st div {height: 399px;}
+	  #article3 figure div {width: 100%; height: 267px; background-size: cover; background-repeat:no-repeat; transition:all 0.1s;}
+	  #article3 .small_s { background-image:url("../Image/S_grey.png"); }
+	  #article3 .small_3 { background-image:url("../Image/3_grey.png"); }
+	  #article3 .small_x { background-image:url("../Image/X_grey.png"); }
+	  #article3 .small_y { background-image:url("../Image/Y_grey.png"); }
+	  #article3 .small_r { background-image:url("../Image/ROADSTER_grey.png"); }
+	  #article3 figure:nth-child(1):hover .small_s { background-image:url("../Image/S.png"); }
+	  #article3 figure:nth-child(2):hover .small_3 { background-image:url("../Image/3.png"); }
+	  #article3 figure:nth-child(3):hover .small_x { background-image:url("../Image/X.png"); }
+	  #article3 figure:nth-child(4):hover .small_y{ background-image:url("../Image/Y.png"); }
+	  #article3 figure:nth-child(5):hover .small_r{ background-image:url("../Image/ROADSTER.png"); }
+
+	  @keyframes bounce {
+		  0% {margin-bottom: 12px;}
+		  25% {margin-bottom: 6px;}
+		  50% {margin-bottom: 12px;}
+		  75% {margin-bottom: 6px;}
+		  100% {margin-bottom: 12px;}
+	  }
+   
+  /* article4 */
+	 #article4 iframe { width: 100%; height: 100%; }
+
+  /* article6, article7 */
+	  #article6 #hor_logo, #article7 #hor_logo  {width: 330px; height: 30px; background: url("../Icon/tesla_logo_bk.svg") no-repeat; background-size:contain;  margin:0 auto;}
+	  #article6 .menu a, #article7 .menu a {color: #000;}
+	  #article6 .menu a:after, #article7 .menu a:after {background: rgba(0,0,0,0.5);}
+  
+  /* article9 */  
+	  #article9 .solar_control {width: 50%; height: 100%; background-repeat:no-repeat; background-size:contain; background-image:url("../Image/solar_control_grey.jpg"); margin-top:4%; margin-left: 20%; z-index:-1; transition:all 0.1s;}
+	  #article9.on .solar_control, #article9:hover .solar_control { background-image:url("../Image/solar_control.jpg");}
+	  #article9 span {font-weight: bold; font-size: 60px; display: block; margin-bottom: 32px;}
+	  #article9 > p { color:#fff; top:1%; left:10%; z-index:2; position: absolute; width: 45%;} /*z-index+position!!!!!*/
+	  #article9 .hor_text, #article10 .hor_text, #article11 .hor_text, #footer .hor_text  {display: none;}
+	   
+  /* article10 */ 
+	 #article10 h2 {color: #fff; font-size: 32px; padding-top:5%; margin-left:10%; font-weight: normal;}
+   
+  /* article11 */ 
+	  #article11 section {padding-top: 5%; margin-left: 10%; width:50%; height: 100%;}
+	  #article11 span {font-weight: bold; font-size: 60px;}
+	  #article11 section > p {width: 100%; height: 180px;}
+	  #article11 button {cursor:pointer; border:1px solid #fff; outline:0; color: #808080; width: 200px; height: 40px; border-radius:4px; background: transparent; }
+
+  /* article12 = footer */ 
+	  #footer .ver_text { transform:rotate(-90deg); left:5%; top: 37%;}
+	  #footer > ul {position: absolute; top:10%; left: 60%; width: 15%;	}
+	  #footer > ul a {font-size:20px; height: 60px; line-height: 60px; position:relative; padding-bottom: 4px;}
+	  #footer #contact {position: absolute; top:10%; right:5%; width: 12%; height: 20%;overflow: hidden;}
+	  #footer #contact h2 { color:#fff; font-size: 24px; line-height: 50px;}
+	  #footer #sns {position:absolute; right:5%; bottom:5%; width: 12%; height: 20%;overflow: hidden;}
+	  #footer #sns h2 {font-size: 20px; color:#fff; margin-right: -8px; height: 52px;}
+
+	  #footer span { cursor:pointer;	float: left; width: 40px; height: 40px; background-repeat:no-repeat; background-size:contain;  margin-right: 16px;}
+	  #footer .call {background-image:url("../icon/phone.png"); width: 24px; margin-top:12px; margin-right: 20px;}
+	  #footer .line {margin: 0 auto;width: 90%; height: 1px; background:#fff; margin:20px auto;}
+	  #footer .email {background-image:url("../icon/email.png"); width: 24px; margin-top: 18px; margin-right: 20px;}
+	  #footer .fb {background-image:url("../icon/sns_facebook_wh.png"); width: 32px; float: right; margin-bottom: 16px;}
+	  #footer .ig {background-image:url("../icon/sns_instagram_wh.png"); width: 32px; float: right; margin-bottom: 16px;}
+	  #footer .yt {background-image:url("../icon/sns_youtube_wh.png"); float: right; margin-top:-20px;}
+
+  /* meta*/
+	  @media all and (max-width:1599px) {
+		 #wrap {width: 1580px;}
+		 #article3 figure.small_1st { margin-top: 30px;}
+		 #article9 .solar_control { width: 50%; margin-top: 10%;}
+		 #article9 span, #article11 span {line-height: 72px;}
+		 #footer #sns h2 {font-size: 16px;}
+		 #footer #sns, #footer #contact {width: 13%;}
+		 #footer #contact h2 { font-size: 20px;}
+		 #footer .call {width: 20px;}
+		 #footer .email {width: 20px;}
+		 #footer .fb {width: 28px;}
+		 #footer .ig {width: 28px;}
+		 #footer .yt {width: 32px;}
+	  }
+
+	  @media all and (max-width:1199px) {
+		 #wrap {width: 100%;}
+		 p {font-size: 14px; margin:8px auto;}
+		 .menu {width: 660px;}
+		 .menu a {font-size: 14px;}
+		 .ver_text { right:-15%; top: 39%; width: 800px; height: 200px;}
+		 #ver_logo {width: 800px; height: 75px; }
+		 #article2 h2{ font-size: 36px; margin-top: 2%;}
+		 #article3 figure.small_1st { margin-top: 0;}
+		 #article3 figure {margin-top: 0;}
+		 #article3 p {line-height: 24px;}
+		 #article3 figure h5 {margin-bottom: 5px;}
+		 #article9 .solar_control { width: 50%; margin-top: 20%;}
+		 #article11 section > p {height: 210px;}
+		 #article11 button {height: 36px;}
+		 #footer .ver_text { left:0;}
+		 #footer > ul {left: 50%;}
+		 #footer #sns, #footer #contact {right:10%; width: 15%;}
+	  }
+	  @media all and (max-width:1023px) {
+		 .ver_text { right:-20%; width: 760px; height: 160px;}
+		 #ver_logo {width: 760px; height: 71px; }
+		 #article2 h2{ font-size: 32px; margin-top: 3%;}
+		 #article3 figure.small_1st { margin-bottom: 0;}
+		 #article3 figure p { font-size: 12px; line-height: 18px; height: 24px;}
+		 #article9 .solar_control { width: 50%; margin-top: 30%; margin-left: 8%;}
+		 #article9 > p {width: 60%;}
+		 #article11 section > p {height: 240px;}
+		 #article11 button {height: 32px;}
+		 #footer .ver_text { left:-10%;}
+		 #footer #sns, #footer #contact {right:8%; width: 17%;}
+		 #footer > ul a {font-size: 18px;}
+		 .detail_text {width: 560px; left:calc(50% - 280px);}
+		 .detail_text h2 {font-size: 20px;}
+		 .detail_text ul {height: 50px;}
+		 .detail_text li {height: 50px; font-size: 18px; width: 180px;}
+		 .detail_text li b {font-size: 16px;}
+	  }
+	  @media all and (max-width:767px) {
+		 .ver_text { right:-30%; width: 720px; height: 130px;}
+		 #ver_logo {width: 720px; height: 67px; }
+		 #article9 .solar_control { margin-top: 50%; margin-left: 6%;}
+		 #article10 h2 {width: 50%;}
+		 #article11 section > p {	height: 360px;}
+		 #article11 button {height: 28px;}
+		 #footer > ul a {font-size: 16px;}
+		 #footer #sns h2 {font-size: 16px;}
+		 #footer #contact h2 { font-size: 18px;}
+		 #footer #sns, #footer #contact { width: 20%;}
+		 #footer .ver_text { left:-15%;}
+	  }
+	  @media all and (max-width:479px) {
+		 article {background-size: contain;} 
+		 #article2, #article3 {display: none;}
+		 .ver_text {display: none;}
+		 #article2 .hor_text {display: none;}
+		 #article1 .ver_text {display: block; width: 100%; height: 100%; transform:rotate(0); left:0; top:0;}
+		 #article1 #ver_logo {width: 180px; height: 18px; margin:10% auto 99%; }	#article1 iframe { top:31%;} 
+		 #article1 span {text-align: center;}
+		 #article1 .upgrade {width: 50%; margin:5% auto 0; height: 100%;}
+		 #article1 .upgrade li {float:none;	}
+		 #article1 .upgrade a{ font-size: 16px;}
+		 .slider { cursor:pointer; display: block; background: rgba(255,255,255,0.5); width: 80%; height: 60px; border-radius:30px; position: absolute; left:10%; bottom:10%;  z-index:10;}
+		 #article11 .slider {bottom: 6%;}
+		 .slider:hover {background: rgba(255,210,0,0.5);}
+		 .slider_btn {background:#fff; width: 48px; height: 48px; position: absolute; top:6px; left:6px; border-radius:50%;}
+		 .slider_btn img {margin-left: 16px; margin-top: 14px; width: 18px;}
+		 .slider p {position: absolute; left:40%; top:8px; color: #fff; text-align: center; font-size: 18px;}
+		 #article4,#article5,#article6,#article7,#article8, #article11 {background-position:center 120px;}
+		 .hor_text{display: block; top:0%; left:0%; background:#000; margin-left: 0; position:relative;}
+		 #hor_logo, #article6 #hor_logo, #article7 #hor_logo  {width: 180px; height:18px; position:absolute; left:calc(50% - 90px); top:20%;  background: url("../Icon/tesla_logo_wh.svg") no-repeat;background-size:contain; }
+		 .menu {position:absolute; top:30%; left:calc(50% - 170px); width: 340px; text-align: center; }
+		 .menu li {display:inline-block; text-align: center;}
+		 .menu a {padding:0 10px 4px; }
+		 .menu li:nth-child(5) a{padding:0 10px 4px 62px;}
+		 .menu li:nth-child(6) a {padding:0 62px 4px 10px;}
+		 .detail_text {top:48%; left:0; width: 100%; margin:0 auto;}
+		 .detail_text .topFeatures {display: block;}
+		 .detail_text ul {width: 100%; overflow:visible; margin:0 auto; text-align: center;}
+		 .detail_text li {float:none; border-right: 0; width: 30%; padding:0; color: #fff; margin:0 auto; text-align: center; height: 72px;}   #article4 .detail_text li, #article5 .detail_text li, #article8 .detail_text li {border-right:0;}
+		 #article6 .menu a, #article7 .menu a {color: #fff;}
+		 #article6 .menu a:after, #article7 .menu a:after {background: rgba(255,255,255,0.5);}
+		 #article9 .hor_text {display: block;}
+		 #article9 span, #article11 span {font-size: 20px; color:#FFD200;}
+		 #article9 .solar_control {margin-top: 8%; margin-left: 20%;}
+		 #article9 > p {top:40%; font-size: 16px; left:20%; text-align: center;}
+		 #article10 h2 {margin:0 auto; font-size: 20px; padding-top: 30%; text-align: center;}
+		 #article9 .hor_text, #article10 .hor_text, #article11 .hor_text, #footer .hor_text {display: block;}
+		 #article11 span {font-size: 20px; line-height: 28px;}
+		 #article11 section {padding-top: 70%; margin:0 auto; text-align: center; width: 60%;}
+		 #article11 section > p {font-size: 16px; height: 440px; text-align: center;}
+		 #article11 button {display: none;}
+		 #footer > ul li a {font-size: 14px;}
+		 #footer > ul {left: 15%; top:20%;}
+		 #footer #sns, #footer #contact {width: 40%; right:13%;}
+		 #footer #contact {top:20%;}
+		 #footer #sns h2 {font-size: 14px;}
+		 #footer #contact h2 { font-size: 16px;}
+		 #footer .ver_text {display: none;}
+	  }

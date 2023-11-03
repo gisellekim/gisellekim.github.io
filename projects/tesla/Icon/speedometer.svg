@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="50" height="25.008" viewBox="0 0 50 25.008">
+  <g id="speedometer_wh" transform="translate(-24.7 -23.8)">
+    <path id="패스_4" data-name="패스 4" d="M27.024,48.8a22.676,22.676,0,0,1,45.351,0H74.7a25,25,0,0,0-50,0Z" fill="#fff"/>
+    <rect id="사각형_29" data-name="사각형 29" width="2.751" height="5.139" transform="translate(48.312 26.49)" fill="#fff"/>
+    <rect id="사각형_30" data-name="사각형 30" width="2.751" height="18.5" transform="translate(66.226 46.057) rotate(90)" fill="#fff"/>
+    <rect id="사각형_31" data-name="사각형 31" width="2.751" height="5.139" transform="translate(32.466 34.033) rotate(-45)" fill="#fff"/>
+    <rect id="사각형_32" data-name="사각형 32" width="2.751" height="5.139" transform="translate(65.123 32.949) rotate(45)" fill="#fff"/>
+  </g>
+</svg>

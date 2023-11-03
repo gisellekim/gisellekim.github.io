@@ -1,0 +1,8 @@
+interior_modely = https://tesla-cdn.thron.com/static/WP1BJI_utility_mobile.mp4-2000_KKYVUU.mp4?xseo=
+autopilot = https://tesla-cdn.thron.com/static/WCMH5L_navigate-on-autopilot_0.mp4-2000_NXPQJO.mp4?xseo=
+autopilot_autopark =https://tesla-cdn.thron.com/static/2NNJP0_autopark_0.mp4-2000_VLVCM3.mp4?xseo=
+autopilot_lanechange = https://tesla-cdn.thron.com/static/A7I6LP_lane_change_0.mp4-2000_PYSUF4.mp4?xseo=
+modelx=https://tesla-cdn.thron.com/static/2IFNG3_range-hero-mobile.mp4-2000_5PUGGL.mp4?xseo=
+solar = https://tesla-cdn.thron.com/static/UAOSKA_summon_0.mp4-2000_7CBNPU.mp4?xseo=
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/362609421" width="640" height="360" frameborder="0" allowfullscreen></iframe>
