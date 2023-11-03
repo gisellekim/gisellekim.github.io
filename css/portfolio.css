@@ -89,7 +89,7 @@
 		100%  {transform:translateX(20%);}
 		}
 		#home .hover-over {position: absolute;top: 0; left: 0;width: 100vw; height: 100vh; background: url("../Image/white.jpg") no-repeat;background-position: 0 0; background-size:cover;}
-		#home .hover-image { position: absolute; width: 300px; height: 300px; border-radius:150px; background: url("../Image/background.png") left top/100%; }
+		#home .hover-image { position: absolute; width: 300px; height: 300px; border-radius:150px; background: url("../Image/background.png") left top/100vw 100vh; }
 		#home .hover-image.off {background: url("../Image/white.jpg");}
 
 	/*about1*/
