@@ -112,7 +112,7 @@
 	/*work*/
 		#work .text_group {position:relative; width: 100vw; height: 100vh; white-space: normal; top:0; left: 15%; margin:0; z-index:2; }
 		#work .text_container {position: absolute; top: 50%; left: 50%; width: 100vh; height: 100vw; transform: translate3d(-53%,-51%,0) rotate(-90deg);}
-		#work h1 {cursor:pointer; font-size:calc(28px + 4vw); color: #515151; font-weight: normal; line-height: calc(40px + 7.4vw); transition:all 0.3s;}
+		#work h1 {cursor:pointer; font-size:calc(28px + 5vw); color: #515151; font-weight: normal; line-height: calc(40px + 9vw); transition:all 0.3s;}
 		#work h1:hover {margin-left: 10%;}
 
 	/*works*/
@@ -188,7 +188,7 @@
 	  }
 	  @media all and (max-width:1600px) {
 		#home .keywords {top:-3%}
-		#work .text_group { left: 30%;}
+		#work .text_group { left: 40%;}
 		/* #work h1 { line-height: 180px; }  */
 		#work .text_container {transform: translate3d(-86%,-51%,0) rotate(-90deg);}
 		.worksBG > img {margin-top: 7.5%;}
