@@ -1,0 +1,10 @@
+1.  (완료) mouse interaction  (완료)
+2.  (완료) before after top,bottom 한번에 쓸수 없으므로 top으로 통일하기
+3.  (완료) main article 밑에 빈공간 생기는 이유 - 0.5로 해결하기는 함 but 진짜이유?  img inlineblock 이라서 그럼 block레벨으로 해주기
+4.  (완료) 크기를 줄일 떄 백그라운드 크기가 있어서 안보이는 경우 어떻게해야하나요? size 100%
+5.  (완료) #menu 위치잡기 float:right
+6.  (완료) font-variable - regular 만 가능
+7.  (완료) mobile menu 만들기
+8. (완료)  이미지 계속 내려와있는이유: before의 relative때문이였음. absolute 줘서 잡힘 
+9. (완료)  모바일 메뉴 클릭시, 그에 해당하는 아이템만 보여주기
+10. (완료)  반응형 자리찾기

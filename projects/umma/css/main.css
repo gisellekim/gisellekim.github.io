@@ -1,0 +1,424 @@
+
+	/*default*/
+		@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+		* { margin:0; padding:0; box-sizing:border-box;}
+		body { font-family: 'Roboto Slab', serif; width: 100%; background: #000;}
+		li { list-style:none; }
+		a { text-decoration:none; }
+		html,body, #wrap { height:100%; 	width: 100%;}
+		article h1 {font-family: 'Lobster', cursive; letter-spacing: 1px; font-size: 40px; font-weight: normal; color:#fff; text-align: center; padding-top: 40px; position: relative; z-index:999; cursor:pointer;}
+		article {width: 100%; height: 100vh;}
+		.bg {width: 100%;height: 100vh; background-repeat:no-repeat; background-size:100%; background-position:center center; position: relative; overflow: hidden; box-sizing:border-box;}
+		article h2 {position: absolute; top:calc(50% - 53px); height: 106px; z-index:999; font-size: 80px; color: #fff; font-weight: normal;}
+		article .up { position:absolute; bottom:1%; right:1%; width: 56px; height: 56px; background: url("../Icon/up.svg") no-repeat; background-size:cover; cursor:pointer;}
+
+	/* contents */
+		.contents h2 {   text-align: center;}
+		.contents .product {visibility:hidden;  position:absolute; padding:0 1%; width: auto; background: #fff; border-radius:8px; cursor:pointer; height: 128px; transition:all 0.5s; box-sizing:border-box; z-index:9999; }
+		.contents .product:before {visibility:hidden;  content:""; display: block; width:48px; height: 40px; top:-34px; left:calc(50% - 24px); position:absolute; z-index:99; background: url("../Icon/triangle.svg") no-repeat; background-size:cover; transform:rotate(180deg);}
+		.contents .product:after {visibility:visible; content:""; display: block; width:32px; height: 32px; border:4px solid #fff; border-radius:50%; background: transparent; top:-150%; left:calc(50% - 16px); position:relative; z-index:99;animation: button 1s 1s infinite linear alternate;}
+		.contents .product.below:before {transform:rotate(0); top:95%;}
+		.contents .product.below:after {top:150%;} 
+		.contents #img {float: left; height: 100%; }		
+		.contents #img img {height: 90%; text-align: center;  }
+		.contents .product p {float: left; margin-left: -5%; font-weight: 200; padding:10% 0; font-size: 18px; }
+		.contents .product p span {font-weight: normal;}
+		.contents .menu {cursor:pointer; display: none; position: relative; width: 24px; height: 20px; z-index:99999; margin:0; float: right; margin-right: 4%;	}
+		.contents .menubar1 {position:absolute; top:0; left: 0; width: 100%; height: 2px; background: #fff; transition:all 0.3s;transform:rotate(0); transform-origin:0% 50%;}
+		.contents .menubar2 {position:absolute; bottom: 1%; left: 0; width: 100%; height: 2px; background: #fff; transition:all 0.3s;transform:rotate(0); transform-origin:0% 50%;}
+		.contents .menu.open .menubar1 {transform:rotate(45deg); }
+		.contents .menu.open .menubar2 {transform:rotate(-45deg);}
+
+		@keyframes button {
+		0% {opacity:1; transform:scale(1);}
+		50% {opacity:0.5; transform:scale(1.25);}
+		100% {opacity:0; transform:scale(1.5);}
+		}
+
+		.contents .product.active { visibility:visible; }
+		.contents .product.active:before { visibility:visible; }
+
+	
+	/* main */
+		#main {background: #1f2720;}
+		#main .dnm {  width: 150px; height: 150px; border-radius: 50%; border: 1px solid #fff; line-height: 150px; font-size: calc(14px + 0.1vw); color: #fff; text-align: center; z-index: 9999; position: absolute; top: 20%; right: 20%; animation: twinkle 1s linear infinite;}
+		#main h2 {left:calc(50% - 582px);  width: 1164px; }
+		#main h2 span {font-size: 98px;font-family: 'Lobster', cursive; letter-spacing: 1px;}
+		#main div {position:absolute; width: auto; height: auto; }
+		#main div img {width: 100%;display: block; }
+		.bedding {top:-50%; left:0; z-index:0;}
+		.pillow {bottom: -15%; right:-24%; z-index:1;}
+		.knit {top:30%; right:25%; z-index:2;}
+		.furmat {top:40%; left:40%; z-index:3;}
+		.wooden {bottom:10%; right:20%; z-index:4;}
+		.decoplant {top:10%;	right: 0; z-index:5;}
+		.blanket {top:15%; left:0; z-index:6;}
+		.porcelain2 {bottom: 0; left:0; z-index:7;}
+		.cactus3 {bottom: 0; right: 25%; z-index:8;}
+		.cactus2 {bottom: -2%; right: 30%; z-index:9;}
+		.basket {bottom: -30%; right: -5%; z-index:10;}
+		.plant{top:-8%; right: -2%; z-index:11;}
+		.storage3 {bottom: 1%; left:35%; z-index:12;}
+		.porcelain {bottom: -20%; left:8%; z-index:13;}
+		.storage2 {bottom: 0; left:30%; z-index:14;}
+		.storage1 {bottom: -5%; left:41%; z-index:15;}
+		.car {bottom: 0; left:15%; z-index:16;}
+		.cactus1 {bottom: -5%; right:40%; z-index:17;}
+		.curtain {top:0; left:-15%; z-index:18; transition:all 0.5s;}
+		#main:hover .curtain {left:-30%;}
+
+		@keyframes twinkle {
+		0% { opacity:0; transform:scale(1);}
+		50% { opacity:1; transform:scale(1.5);}
+		100% { opacity:0; transform:scale(1);}
+		}
+
+	/* bedroom */
+		#bedroom {  background: #858DA1; }
+		#bedroom .bg { background-image:url("../Image/bedroom.jpg"); }
+		#bedroom h2 { left:calc(50% - 209.5px); top:calc(50% - 53px); width: 419px; color: #858DA1; }
+		.bedroom_chair {top:53%; left:2%;}
+		.bedroom_chairwrack {top:16%; left:27%;}
+		.bedroom_lamp {top:12%; right:1%;}
+		.bedroom_blanket {top:80%; left:45%;}
+		.bedroom_cabinet {top:50%; right:0.5%;}
+		.bedroom_closet {top:5%; right:17%;}
+
+	/* restroom */
+		#restroom {  background: #0F0A0C; }
+		#restroom .bg { background-image:url("../Image/restroom.jpg"); }
+		#restroom h2 {left:calc(50% - 237px); width: 474px; color: #0F0A0C;}
+		.restroom_washbasin {top:19%; right:35.5%;}
+		.restroom_cabinet {top:15%; left:17%;}
+		.restroom_shelves {top:5%; right:15%;}
+		.restroom_storage {top:50%; left:3%;}
+		.restroom_basket {top:53%; right:12%;}
+
+	/* kitchen */
+		#kitchen { background: #8A1A10;}
+		#kitchen .bg {background-image:url("../Image/kitchen.jpg");}
+		#kitchen h2 { top:12%; left:calc(50% - 194px); width: 388px; color: #8A1A10;}
+		.kitchen_metaltex {top:45%; right:4%;}
+		.kitchen_trolley {top:40%; left:20%;}
+		.kitchen_board {top:10%; left:16%;}
+		.kitchen_stool {top:85%; right:23.5%;}
+		.kitchen_light {top:2%; right:15%;}
+
+	/* diningroom */
+		#diningroom { background: #6B4C31;}
+		#diningroom .bg { background-image:url("../Image/diningroom.jpg");}
+		#diningroom h2 {top:30%; left:calc(50% - 291.5px); width: 583px; color: #fff;}
+		.diningroom_light {top:1%; right:32%;}
+		.diningroom_desk {top:30%; right:15%;}
+		.diningroom_rug {top:65%; right:20%;}
+		.diningroom_lamp {top:40%; left:10.3%;}
+		.diningroom_chair {top:65%; left:23%;}
+
+	/* studio */
+		#studio { background: #016F57; }
+		#studio .bg { background-image:url("../Image/studio.jpg");}
+		#studio h2 {left:calc(50% - 157px); width: 314px; color: #016F57;}
+		.studio_desk {top:69%; left:18%;}
+		.studio_chair {top:79%; right:32%;}
+		.studio_lamp {top:40%; left:7.7%;}
+		.studio_vase {top:24%; right:33%;}
+		.studio_rug {top:62%; right:8%;}
+		.studio_curtain {top:20%; left:30%;}
+
+	/* footer */
+		#footer {background:#000;}
+		#footer .bg {background: 000;}
+		#footer .up {top:2%; }
+		#footer h1 {font-size: 80px; color: #fff;}
+		#footer p {text-align: center; color: #808080;}
+		#footer .uls {overflow: hidden;}
+		#footer ul {float: left; width: 33.33%; padding: 5% 0;}
+		#footer ul:last-child li:first-child {margin-bottom: 20%;}
+		#footer ul a {display: block; color: #808080; font-size: 40px; text-align: center; line-height: 72px;}
+		#footer ul a span {display: inline-block; width: 48px; height: 48px; background-repeat: no-repeat; background-size:contain; margin-right: 4%; margin-bottom: -2%; }
+		#footer #fb {background-image:url("../Icon/sns_facebook_wh.svg");}
+		#footer #ig {background-image:url("../Icon/sns_instagram_wh.svg");}
+		#footer #yt {background-image:url("../Icon/sns_youtube_wh.svg"); width: 52px;}
+
+	/* meta */
+	  @media all and (max-width:1600px) { 
+	    /* default */
+			article .up {width: 52px; height: 52px;}
+			article h2 {font-size: 66px;}
+	    /* contents */
+			.contents .product {height: 108px;}
+			.contents .product:before {width: 44px; height: 37px; top:-35px;}
+			.contents .product:after {width: 30px; height: 30px;}
+			.contents .product p {padding: 8% 0;}
+		/* main */
+			#main .dnm {  width: 130px; height: 130px; line-height: 130px; }
+			.bedding {top:-40%; left:0; z-index:0;}
+			.knit {top:25%; right:15%; z-index:1;}
+			.furmat {top:25%; left:40%; z-index:2;}
+			.pillow {bottom: -20%; right:-30%; z-index:3;}
+			.wooden {bottom:10%; right:20%; z-index:4;}
+			.decoplant {top:10%;	right: 0; z-index:5;}
+			.blanket {top:15%; left:0; z-index:6;}
+			.porcelain2 {bottom: 0; left:0; z-index:7;}
+			.cactus3 {bottom: 0; right: 20%; z-index:8;}
+			.cactus2 {bottom: 0; right: 27%; z-index:9;}
+			.basket {bottom: 0; right: 0; z-index:10;}
+			.plant{top:0; right: 0; z-index:11;}
+			.storage3 {bottom: 1%; left:40%; z-index:12;}
+			.porcelain {bottom: 0; left:8%; z-index:13;}
+			.storage2 {bottom: 0; left:35%; z-index:14;}
+			.storage1 {bottom: 0; left:45%; z-index:15;}
+			.car {bottom: 0; left:15%; z-index:16;}
+			.cactus1 {bottom: 0; right:33%; z-index:17;}
+			.curtain {top:0; left:-20%; z-index:18;}
+
+		/* bedroom */
+			.bedroom_chair {top:53%; left:2%;}
+			.bedroom_chairwrack {top:20%; left:25.5%;}
+			.bedroom_lamp {top:17.5%; right:1%;}
+			.bedroom_blanket {top:75%; left:45%;}
+			.bedroom_cabinet {top:50%; right:0.5%;}
+			.bedroom_closet {top:10%; right:17%;}
+
+		/* restroom */
+			.restroom_washbasin {top:19%; right:33.5%;}
+			.restroom_cabinet {top:15%; left:17%;}
+			.restroom_shelves {top:5%; right:15%;}
+			.restroom_storage {top:48%; left:1.8%;}
+			.restroom_basket {top:49%; right:12%;}
+
+		/* kitchen */
+			#kitchen h2 {top:21%;}
+			.kitchen_metaltex {top:43.5%; right:3%;}
+			.kitchen_trolley {top:60%; left:20%;}
+			.kitchen_board {top:7%; left:18%;}
+			.kitchen_stool {top:72.5%; right:26%;}
+			.kitchen_light {top:1%; right:18%;}
+
+		/* diningroom */
+			.diningroom_light {top:1%; right:31.5%;}
+			.diningroom_desk {top:60%; right:15%;}
+			.diningroom_rug {top:87%; right:20%;}
+			.diningroom_lamp {top:8%; left:9.5%;}
+			.diningroom_chair {top:65%; left:23%;}
+
+		/* studio */
+			.studio_desk {top:67%; left:18%;}
+			.studio_chair {top:75%; right:32%;}
+			.studio_lamp {top:40%; left:7%;}
+			.studio_vase {top:5%; right:28%;}
+			.studio_rug {top:85%; right:7%;}
+			.studio_curtain {top:1%; left:28%;}
+	  }
+	  
+	  @media all and (max-width:1440px) { 
+		.contents  .product:before {top:-30px;}
+		 .contents .product.below:before {top:92%;}
+		 .restroom_storage { top: 75%; left: 1.8%;}
+		 .restroom_washbasin  {top:28%; right: 28%;}
+		 .restroom_basket {top:73%; right: 6%;}
+		 .restroom_shelves  {top:8%; right: 6%;}
+		 .restroom_cabinet {top: 16%; left: 7%;}
+		 #kitchen h2 {top: 30%;}
+		 .kitchen_light{top: 12%; right: 10%;}
+		 .kitchen_board {top: 18%; left: 10%;}
+		 .kitchen_trolley {top: 65%; left: 14%;}
+		 .kitchen_stool {right: 17%;}
+		 .kitchen_metaltex {top: 48%; right: 1%;}
+		 #diningroom h2 {top: 38%;}
+		 .diningroom_lamp {top: 20%; left: 1%;}
+		 .diningroom_light {top: 15%; right: 25%;}
+		 .diningroom_desk {right: 10%;}
+		 .diningroom_rug {top: 84%;}
+		 .studio_curtain {top: 13%; left: 22%;}
+		 .studio_vase {top: 16%; right: 20%;}
+		 .studio_desk {top: 65%; left: 12%;}
+		 .studio_chair  {top: 75%; right: 27%;}
+	  }
+	  
+	  @media all and (max-width:1280px) {
+	    /* default */
+			article .up {width: 40px; height: 40px;}
+			article h2 {font-size: 52px;}
+	    /* contents */
+			.contents .product {height: 88px;}
+			.contents .product:before {width: 40px; height: 34px; top:-28px;}
+			.contents .product:after {width: 28px; height: 28px;}
+		/* main */
+			#main h2 {left: 13%;}
+			.bedding {top:-27%; left:-15%; z-index:0;}
+			.basket {bottom: -15%; right: -15%; z-index:10;}
+			.plant{top:0; right: -10%; z-index:11;}
+			.car {bottom: -3%; left:7%; z-index:16;}
+			.cactus1 {bottom: -5%; right:30%; z-index:17;}
+			.curtain {top:0; left:-50%; z-index:18;}
+		/* footer */
+		#footer .uls {margin-top: 5%;}
+		}
+
+	  @media all and (max-width:1024px) {
+		 .contents .product.below:before {top:92%;}
+		 .restroom_storage { top: 75%; left: 1.8%;}
+		 .restroom_washbasin  {top:28%; right: 28%;}
+		 .restroom_basket {top:73%; right: 6%;}
+		 .restroom_shelves  {top:8%; right: 6%;}
+		 .restroom_cabinet {top: 16%; left: 7%;}
+		 #kitchen h2 {top: 30%;}
+		 .kitchen_light{top: 12%; right: 10%;}
+		 .kitchen_board {top: 18%; left: 10%;}
+		 .kitchen_trolley {top: 65%; left: 14%;}
+		 .kitchen_stool {right: 17%;}
+		 .kitchen_metaltex {top: 48%; right: 1%;}
+		 #diningroom h2 {top: 38%;}
+		 .diningroom_lamp {top: 20%; left: 1%;}
+		 .diningroom_light {top: 15%; right: 25%;}
+		 .diningroom_desk {right: 10%;}
+		 .diningroom_rug {top: 84%;}
+		 .studio_curtain {top: 13%; left: 22%;}
+		 .studio_vase {top: 16%; right: 20%;}
+		 .studio_desk {top: 65%; left: 12%;}
+		 .studio_chair  {top: 75%; right: 27%;}
+	  }
+	  @media all and (max-width:812px) { 
+	    /* default */
+			article .up {width: 32px; height: 32px;}
+			article h2 {font-size: 36px; width: 52px; width: 261px; height: 48px;}
+
+	    /* contents */
+			.contents .product {height: 68px;}
+			.contents .product.below:before {top:90%;}
+			.contents .product:before {width: 36px; height: 31px; top:-26px;}
+			.contents .product:after {width: 24px; height: 24px; border:3px solid #fff;}
+			.contents .product p {font-size: 16px; padding:4% 0;}
+			
+		/* main */
+			.bedding {top:-30%; left:-30%; z-index:0;}
+			.knit {top:25%; right:15%; z-index:1;}
+			.furmat {top:25%; left:40%; z-index:2;}
+			.pillow {bottom: -20%; right:-30%; z-index:3;}
+			.wooden {bottom:10%; right:20%; z-index:4;}
+			.decoplant {top:10%;	right: 0; z-index:5;}
+			.blanket {top:15%; left:0; z-index:6;}
+			.porcelain2 {bottom: 0; left:0; z-index:7;}
+			.cactus3 {bottom: 0; right: 20%; z-index:8;}
+			.cactus2 {bottom: 0; right: 27%; z-index:9;}
+			.basket {bottom: -30%; right: -30%; z-index:10;}
+			.plant{top:0; right: 0; z-index:11;}
+			.storage3 {bottom: 1%; left:40%; z-index:12;}
+			.porcelain {bottom: 0; left:8%; z-index:13;}
+			.storage2 {bottom: 0; left:35%; z-index:14;}
+			.storage1 {bottom: 0; left:45%; z-index:15;}
+			.car {bottom: 0; left:15%; z-index:16;}
+			.cactus1 {bottom: 0; right:33%; z-index:17;}
+			.curtain { left:-50%;}
+			#main:hover .curtain {left: -80%;	}
+
+		/* bedroom */
+			.bedroom_chairwrack {top:34%; left:16%;}
+			.bedroom_lamp {top:32%; right:7%;}
+			.bedroom_cabinet {top:75%; right:0.5%;}
+			.bedroom_closet {top:18%; right:23%;}
+			.bedroom_blanket {top:65%; left: 35%;	}
+
+		/* restroom */
+			.restroom_washbasin {top:35%; right:26%;}
+			.restroom_cabinet {top:30%; left:2%;}
+			.restroom_shelves {top:22%; right:5%;}
+			.restroom_storage {top:68%; left:1.8%;}
+			.restroom_basket {top:65%; right:4%;}
+
+		/* kitchen */
+			#kitchen h2 {top:35%;}
+		 .kitchen_light{top: 20%; right: 10%;}
+		 .kitchen_board {top: 28%; left: 10%;}
+
+		 #diningroom h2 {top: 38%;}
+		 .diningroom_lamp {top: 30%; left: 1%;}
+		 .diningroom_light {top: 25%; right: 25%;}
+		 .diningroom_rug {top: 74%;}
+
+		/* studio */
+		 .studio_curtain {top: 28%; left: 15%;}
+		 .studio_vase {top: 25%; right: 20%;}
+		 .studio_desk {top: 65%; left: 1%;}
+		 .studio_chair  {top: 60%; right: 21%;}
+		 .studio_lamp {top: 45%; left: 1%;}
+		 .studio_rug {top: 75%; right: 1%;}
+		
+		/* footer */
+			#footer .uls {padding-top: 20%;}
+			#footer ul a {font-size: 24px; line-height: 60px;}
+			#footer h1 {font-size: 60px;}
+			#footer ul a span {width: 40px; height: 40px; margin-bottom: -5%;}
+	  }
+	  @media all and (max-width:800px) { 
+			#main .dnm {   width: 110px; height: 110px; line-height: 110px; top: 70%;}
+	  }
+	  
+	  @media all and (max-width:600px) { 
+			#footer ul a span {width: 36px; height: 36px; }
+		}
+	  
+	  @media all and (max-width:480px) { 
+		/*default*/
+			article {background-size:contain;}
+			article h1 {font-size: 20px; padding-top: 20px; color: #fff;}
+			article h2, #main h2, #bedroom h2, #restroom h2, #kitchen h2, #diningroom h2, #studio h2 {font-size: 18px; top:6%; left:50%; margin-left: -50%; text-align: center; width: 100%; color: #fff; }
+			article .up {width: 24px; height: 24px; right:4%; bottom:2%; }
+			#footer .up {top:3%; right:2%;}
+			#main h2 {top: 50%; margin-top: -50%;}
+			
+		/* main */
+			.bedding {top:-3%; left:0; z-index:0;}
+			.knit {top:25%; right:15%; z-index:1;}
+			.furmat {top:25%; left:35%; z-index:2;}
+			.pillow {bottom: -5%; right:-60%; z-index:3;}
+			.wooden {bottom:3%; right:20%; z-index:4;}
+			.decoplant {top:10%; right: -50%; z-index:5;}
+			.blanket {top:15%; left:-90%; z-index:6;}
+			.porcelain2 {bottom: -10%; left:-5%; z-index:7;}
+			.cactus3 {bottom: -5%; right: 20%; z-index:8;}
+			.cactus2 {bottom: -5%; right: 27%; z-index:9;}
+			.basket {bottom: 0; right: -10%; z-index:10;}
+			.plant{top:0; right: 0; z-index:11;}
+			.storage3 {bottom: 1%; left:30%; z-index:12;}
+			.porcelain { bottom: -7%; left:3%; z-index:13;}
+			.storage2 {bottom: 0; left:25%; z-index:14;}
+			.storage1 {bottom: 0; left:35%; z-index:15;}
+			.car {bottom:-5%; left:7%; z-index:16;}
+			.cactus1 {bottom: -20%; right:33%; z-index:17;}
+			.curtain {top:0; left:-100%; z-index:18;}
+			#main:hover .curtain {left:-150%;}
+			
+		/* contents */
+			.contents .menu {display: block; }
+			.contents h1 {color: #fff;}
+			.contents .product {position:relative; width: 100%; height: 14%; border-radius:0; left:0; padding:1% 2%; top:0; transition:all 0.5s;}
+			.contents .product:nth-of-type(1) {top:10%;}
+			.contents .product:nth-of-type(2) {top:10%;}
+			.contents .product:nth-of-type(3) {top:10%;}
+			.contents .product:nth-of-type(4) {top:10%;}
+			.contents .product:nth-of-type(5) {top:10%;}
+			.contents .product:nth-of-type(6) {top:10%;}
+			.contents .product:nth-of-type(7) {top:10%;}
+			.contents .product:nth-of-type(8) {top:10%;}
+			.contents .product:before, .contents .product:after  {display: none;}
+			.contents .product p {margin-left: -10%;}
+			.contents .product.studio_desk p {margin-left: -15%;	}
+
+
+		/* footer */
+			#footer h1 {font-size: 40px; color: #fff;}
+			#footer ul {float:none; width: 100%; padding:0;}
+			#footer ul:last-child {margin-bottom: 10%;}
+			#footer ul:last-child li:first-child {margin-bottom: 0;}
+			#footer ul a { font-size: 16px; line-height: 32px;}
+			#footer ul a span {width: 18px; height: 18px; margin-right: 2%; margin-bottom: -1%;}
+			#footer #yt {width: 20px;}
+	  }
+	  
+	  @media all and (max-width:375px) {
+	  }
+
+
+

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56">
+  <g id="up" transform="translate(-1810 -6372)" opacity="0.5">
+    <path id="ZIGZAG-next" d="M18.667,16.786l-5.812-5.812h0L1.949.068,1.88,0,.034,1.846c.034.034.034.068.068.068L14.94,16.786.1,31.624a.472.472,0,0,0-.1.137l1.846,1.846.1-.1,9.231-9.231h0Z" transform="translate(1820.889 6406.222) rotate(-90)" fill="#fff"/>
+    <g id="타원_63" data-name="타원 63" transform="translate(1810 6372)" fill="none" stroke="#fff" stroke-width="3">
+      <circle cx="28" cy="28" r="28" stroke="none"/>
+      <circle cx="28" cy="28" r="26.5" fill="none"/>
+    </g>
+  </g>
+</svg>

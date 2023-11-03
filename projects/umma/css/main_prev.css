@@ -1,0 +1,234 @@
+
+	/*default*/
+		@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@531&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+		* { margin:0; padding:0; box-sizing:border-box;}
+		body { font-family: 'Roboto Slab', serif; width: 100%;}
+		li { list-style:none; }
+		a { text-decoration:none; }
+		#wrap {height: auto;}
+		article h1 {font-family: 'Lobster', cursive; letter-spacing: 50; font-size: 40px; font-weight: normal; color:#fff; text-align: center; padding-top: 40px; position: relative; z-index:999; cursor:pointer;}
+		article {width: 100%; height: 1000px; background-repeat:no-repeat; background-size:100%; background-position:center center; position: relative; overflow: hidden; box-sizing:border-box;}
+		article h2 {position: absolute; top:calc(50% - 53px); height: 106px; z-index:999; font-size: 80px; color: #fff; font-weight: normal;}
+		article .up { position:absolute; bottom:1%; right:1%; width: 56px; height: 56px; background: url("../Icon/up.svg") no-repeat; background-size:cover; cursor:pointer;}
+
+	/* contents */
+		.contents > div {/* visibility:hidden; */ position:absolute; padding:0.5% 1%; width: auto; background: #fff; border-radius:8px; cursor:pointer; height: 128px; }
+		.contents > div:before {/* visibility:hidden; */ content:""; display: block; width:48px; height: 40px; top:-40px; left:calc(50% - 24px); position:relative; z-index:99; background: url("../Icon/triangle.svg") no-repeat; transform:rotate(180deg);}
+		.contents > div:after {visibility:visible; content:""; display: block; width:32px; height: 32px; border:4px solid #fff; border-radius:50%; background: transparent; top:-150%; left:calc(50% - 16px); position:relative; z-index:99;}
+		.contents > div.below:before {transform:rotate(0); top:100%;}
+		.contents > div.below:after {top:150%;} 
+		.contents #img {height: 104px; float: left; margin-top: -11%; }		
+		.contents > div img {height: 100%; text-align: center; display: block; }
+		.contents > div p {float: left; font-weight: 100; padding-left: 0; }
+		.contents > div p span {font-weight: normal;}
+		.contents #menu {display: none; position: relative; width: 24px; height: 20px; right:1%; top:1%; z-index:9999; margin:0;}
+		.contents .menubar1 {position:absolute; top:0; left: 0; width: 100%; height: 2px; background: #000; }
+		.contents .menubar2 {position:absolute; bottom: 1%; left: 0; width: 100%; height: 2px; background: #000;}
+
+	
+	/* main */
+		#main {background: #1f2720;}
+		#main h2 {left:calc(50% - 582px);  width: 1164px; }
+		#main div {position:absolute; width: auto; height: auto;}
+		#main div img {width: 100%; float:none;	}
+		.bedding {top:-50%; left:0; z-index:0;}
+		#main .bedding img {width: 150%;}
+		.knit {top:30%; right:25%; z-index:1;}
+		.furmat {top:40%; left:40%; z-index:2;}
+		.pillow {bottom: -15%; right:-24%; z-index:3;}
+		.wooden {bottom:10%; right:20%; z-index:4;}
+		.decoplant {top:10%;	right: 0; z-index:5;}
+		.blanket {top:15%; left:0; z-index:6;}
+		.porcelain2 {bottom: 0; left:0; z-index:7;}
+		.cactus3 {bottom: -0.5%; right: 25%; z-index:8;}
+		.cactus2 {bottom: -0.5%; right: 30%; z-index:9;}
+		.basket {bottom: -0.5%; right: 0; z-index:10;}
+		.plant{top:0; right: 0; z-index:11;}
+		.storage3 {bottom: 1%; left:35%; z-index:12;}
+		.porcelain {bottom: -0.5%; left:8%; z-index:13;}
+		.storage2 {bottom: -0.5%; left:30%; z-index:14;}
+		.storage1 {bottom: -0.5%; left:41%; z-index:15;}
+		.car {bottom: -0.5%; left:15%; z-index:16;}
+		.cactus1 {bottom: -0.5%; right:40%; z-index:17;}
+		.curtain {top:0; left:-20%; z-index:18;}
+
+	/* bedroom */
+		#bedroom { /* background: #858DA1;  */background-image:url("../Image/bedroom.jpg"); }
+		#bedroom h2 { left:calc(50% - 209.5px); top:calc(50% - 53px); width: 419px; color: #858DA1;}
+		.bedroom_chair {top:55%; left:2%;}
+		.bedroom_chairwrack {top:15%; left:27%;}
+		.bedroom_lamp {top:10%; right:1%;}
+		.bedroom_blanket {top:80%; left:45%;}
+		.bedroom_cabinet {top:50%; right:0.5%;}
+		.bedroom_closet {top:5%; right:17%;}
+
+	/* restroom */
+		#restroom { /* background: #0F0A0C; */ background-image:url("../Image/restroom.jpg");}
+		#restroom h2 {left:calc(50% - 237px); width: 474px; color: #0F0A0C;}
+		.restroom_washbasin {top:23%; right:20%;}
+		.restroom_cabinet {top:15%; left:21%;}
+		.restroom_shelves {top:5%; right:5%;}
+		.restroom_storage {top:50%; left:3%;}
+		.restroom_basket {top:53%; right:12%;}
+
+	/* kitchen */
+		#kitchen { /* background: #8A1A10;  */background-image:url("../Image/kitchen.jpg");}
+		#kitchen h2 { top:12%; left:calc(50% - 194px); width: 388px; color: #8A1A10;}
+		.kitchen_metaltex {bottom:40%; right:2%;}
+		.kitchen_trolley {top:45%; left:25%;}
+		.kitchen_board {top:20%; left:22%;}
+		.kitchen_stool {bottom:20%; right:12%;}
+		.kitchen_light {top:30%; right:17%;}
+
+	/* diningroom */
+		#diningroom { /* background: #fff; */ background-image:url("../Image/diningroom.jpg");}
+		#diningroom h2 {top:30%; left:calc(50% - 291.5px); width: 583px; color: #fff;}
+		.diningroom_light {top:15%; right:42%;}
+		.diningroom_desk {top:30%; right:3%;}
+		.diningroom_rug {bottom:10%; right:18%;}
+		.diningroom_lamp {bottom:45%; left:13%;}
+		.diningroom_chair {bottom:20%; left:33%;}
+
+	/* studio */
+		#studio { /* background: #016F57; */ background-image:url("../Image/studio.jpg");}
+		#studio h2 {left:calc(50% - 157px); width: 314px; color: #016F57;}
+		.studio_desk {bottom:15%; left:23%;}
+		.studio_chair {bottom:35%; right:15%;}
+		.studio_lamp {top:40%; left:8%;}
+		.studio_vase {top:20%; right:22%;}
+		.studio_rug {bottom:10%; right:3%;}
+		.studio_curtain {top:20%; left:30%;}
+
+	/* footer */
+		#footer {background:#000;}
+		#footer .up {top:2%; }
+		#footer h1 {font-size: 80px;}
+		#footer p {text-align: center; color: #808080;}
+		#footer .uls {overflow: hidden;}
+		#footer ul {float: left; width: 33.33%; padding: 10% 0;}
+		#footer ul:last-child li:first-child {margin-bottom: 20%;}
+		#footer a {display: block; color: #808080; font-size: 40px; text-align: center; line-height: 72px;}
+		#footer a span {display: inline-block; width: 48px; height: 48px; background-repeat: no-repeat; background-size:contain; margin-right: 4%; margin-bottom: -2%; }
+		#footer #fb {background-image:url("../Icon/sns_facebook_wh.svg");}
+		#footer #ig {background-image:url("../Icon/sns_instagram_wh.svg");}
+		#footer #yt {background-image:url("../Icon/sns_youtube_wh.svg"); width: 52px;}
+
+	/* meta */
+	  @media all and (max-width:1599px) {
+		#main div {width: 90%;}
+		
+		
+	/* main */
+		.bedding {top:-80%; left:0; z-index:0;}
+		.knit {top:25%; right:15%; z-index:1;}
+		.furmat {top:25%; left:40%; z-index:2;}
+		.pillow {bottom: -20%; right:-30%; z-index:3;}
+		.wooden {bottom:10%; right:20%; z-index:4;}
+		.decoplant {top:10%;	right: 0; z-index:5;}
+		.blanket {top:15%; left:0; z-index:6;}
+		.porcelain2 {bottom: 0; left:0; z-index:7;}
+		.cactus3 {bottom: 0; right: 20%; z-index:8;}
+		.cactus2 {bottom: 0; right: 27%; z-index:9;}
+		.basket {bottom: 0; right: 0; z-index:10;}
+		.plant{top:0; right: 0; z-index:11;}
+		.storage3 {bottom: 1%; left:40%; z-index:12;}
+		.porcelain {bottom: 0; left:8%; z-index:13;}
+		.storage2 {bottom: 0; left:35%; z-index:14;}
+		.storage1 {bottom: 0; left:45%; z-index:15;}
+		.car {bottom: 0; left:15%; z-index:16;}
+		.cactus1 {bottom: 0; right:33%; z-index:17;}
+		.curtain {top:0; left:-20%; z-index:18;}
+
+	/* bedroom */
+		.bedroom_chair {bottom:40%; left:2%;}
+		.bedroom_chairwrack {top:30%; left:33%;}
+		.bedroom_lamp {top:25%; right:1%;}
+		.bedroom_blanket {bottom:10%; left:45%;}
+		.bedroom_cabinet {bottom:30%; right:1%;}
+		.bedroom_closet {top:10%; right:18%;}
+
+	/* restroom */
+		.restroom_washbasin {top:23%; right:20%;}
+		.restroom_cabinet {top:15%; left:21%;}
+		.restroom_shelves {top:5%; right:5%;}
+		.restroom_storage {bottom:35%; left:3%;}
+		.restroom_basket {bottom:25%; right:1%;}
+
+	/* kitchen */
+		.kitchen_metaltex {bottom:40%; right:2%;}
+		.kitchen_trolley {top:45%; left:25%;}
+		.kitchen_board {top:20%; left:22%;}
+		.kitchen_stool {bottom:20%; right:12%;}
+		.kitchen_light {top:30%; right:17%;}
+
+	/* diningroom */
+		.diningroom_light {top:15%; right:42%;}
+		.diningroom_desk {top:30%; right:3%;}
+		.diningroom_rug {bottom:10%; right:18%;}
+		.diningroom_lamp {bottom:45%; left:13%;}
+		.diningroom_chair {bottom:20%; left:33%;}
+
+	/* studio */
+		.studio_desk {bottom:15%; left:23%;}
+		.studio_chair {bottom:35%; right:15%;}
+		.studio_lamp {top:40%; left:8%;}
+		.studio_vase {top:20%; right:22%;}
+		.studio_rug {bottom:10%; right:3%;}
+		.studio_curtain {top:20%; left:30%;}
+
+	  }
+	  
+	  @media all and (max-width:1199px) {
+		#main div {width: 80%;}
+	  }
+		 
+	  @media all and (max-width:1023px) { 
+		#main div {width: 70%;}
+	  }
+	  
+	  @media all and (max-width:767px) { 
+		#main div {width: 60%;}
+	  }
+	  
+	  @media all and (max-width:479px) { 
+	/*default*/
+		#main div {width: 50%;}
+		article {background-size:contain;}
+		article h1 {font-size: 20px; padding-top: 20px; color: #000;}
+		article h2, #bedroom h2, #restroom h2, #kitchen h2, #diningroom h2, #studio h2 {font-size: 18px; top:5%; left:50%; margin-left: -50%; text-align: center; width: 100%; }
+		article .up {width: 24px; height: 24px; right:2%; bottom:2%; }
+		#footer .up {top:3%; right:2%;}
+		
+	/* contents */
+		.contents #menu {display: block;}
+		.contents > div {position:relative; width: 100%; height: 12%; border-radius:0; left:0; padding:1% 2%;}
+		.contents > div:nth-of-type(1) {top:22%;}
+		.contents > div:nth-of-type(2) {top:22%;}
+		.contents > div:nth-of-type(3) {top:22%;}
+		.contents > div:nth-of-type(4) {top:22%;}
+		.contents > div:nth-of-type(5) {top:22%;}
+		.contents > div:nth-of-type(6) {top:22%;}
+		.contents > div:nth-of-type(7) {top:22%;}
+		.contents > div:nth-of-type(8) {top:22%;}
+		.contents #img {width: 40%;}
+		.contents > div p {padding-left: 4%; padding-top: 10%;}
+
+
+	/* footer */
+		#footer h1 {font-size: 40px;}
+		#footer .uls {margin-top: 40%;}
+		#footer ul {float:none; width: 100%; padding:0;}
+		#footer ul:last-child {margin-bottom: 15%;}
+		#footer ul:last-child li:first-child {margin-bottom: 0;}
+		#footer a { font-size: 16px; line-height: 38px;}
+		#footer a span {width: 18px; height: 18px; }
+		#footer #yt {width: 20px;}
+	  }
+	  
+	  @media all and (max-width:375px) {
+		#main div {width: 40%;}
+	  }
+
+
+
