@@ -178,8 +178,8 @@
 		#contact .contact {position: absolute; bottom:5%; right:2%;}
 		#contact .contact li {text-align: right; font-size:calc(16px + 1.8vw); line-height: 76px;}
 		#contact .skill_group {float: left; margin-left: 5%; width: 50%;}
-		#contact .progress {float: left; position: relative;margin:3% 2%; width: 16px;height: 16px; border-radius:50%;}
-		.progress span { background: #fff; display : block; position: absolute; top:2px; left:2px; width:12px; height:12px; border-radius: 50%;}
+		#contact .progress {float: left; position: relative;margin:3% 2%; width: 14px;height: 14px; border-radius:50%;}
+		.progress span { background: #fff; display : block; position: absolute; top:2px; left:2px; width:10px; height:10px; border-radius: 50%;}
 
 
 	/* meta */
