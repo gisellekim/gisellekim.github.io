@@ -1,7 +1,7 @@
 $(function ($) {
   if ($(window).width() > 1079) {
     $.fn.hScroll = function (amount) {
-      amount = 500
+      amount = 50
       $(this).bind("DOMMouseScroll mousewheel", function (event) {
         var oEvent = event.originalEvent,
           direction = oEvent.detail
