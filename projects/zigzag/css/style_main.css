@@ -1,0 +1,174 @@
+	/* default */
+		@import url('https://fonts.googleapis.com/css2?family=Roboto');
+		* { margin:0; padding:0; box-sizing:border-box;}
+		/* html,body{width: 100%; height: 100%;} */
+		body { width:100%; height:100%; font-family: "Noto Sans", "Roboto", sans-serif; color: #212529; background:url("../Image/Main_bg.png") no-repeat; box-sizing:border-box; background-position:0 719px;}
+		li { list-style:none; }
+		a { text-decoration:none; color: #212529; }
+		.center { width:75%; height:100%; margin:0 auto; }
+		h2 {cursor:pointer;}
+		#wrap { margin:0 auto; width:100%; height: 100%;}
+		article { margin-bottom:40px; }
+	
+	/* event */
+		#event { cursor:pointer; background: #212529; width:240px; height: 140px; position:fixed; right:0; top:35%; transform-origin:right center; transform:rotate(-90deg); z-index:8; padding:8px; box-sizing:border-box; border-radius:8px 8px 0 0;}
+		#event h2 {color: #d8d8d8; font-size:16px; text-align:center; line-height:40px; height:40px;} /*이벤트 붙이는 법 = rotate시 origin을 준다.*/
+	
+	/* popup S */
+		#popup_s {position:fixed; left:0; top:0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index:99; box-shadow:1px 1px 2px rgba(0,0,0,0.7); }
+		#popup_signup { width: 1060px; height: 438px; position: absolute; margin-left: -530px; margin-top: -224px;left:50%; top:50%; background:url("../Image/popup_Signup.jpg") no-repeat; background-size:cover; border-radius:16px;}
+		#popup_signup .close { cursor:pointer; width: 20px; height: 20px; position: absolute; right:20px; top:12px; border:0; background:transparent; font-size:32px;}
+		#popup_signup .popup_container {position: absolute; right:72px; top:20px; width: 335px; height: 100%; }
+		#popup_signup .popup_contents h1 {font-size:20px; text-align:center; margin-bottom:20px;}
+		#popup_signup .popup_contents section img {cursor:pointer; width: 335px; height: 56px; margin-bottom:12px;}
+		#popup_signup .popup_contents section img:last-child {margin-bottom:0;}
+
+	/* popup A */
+		#popup_a { display:none; position:fixed; left:0; top:0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index:99; box-shadow:1px 1px 2px rgba(0,0,0,0.7); }#popup_ambassador { width: 870px; height: 504px; position: absolute; margin-left: -435px; margin-top: -300px;left:50%; top:50%; background:url("../Image/popup_Ambassador_bg.png") no-repeat; background-size:cover;}
+		#popup_ambassador .close { cursor:pointer; width: 20px; height: 20px; position: absolute; right:20px; top:12px; border:0; background:transparent; font-size:32px; z-index:3;}
+		#popup_ambassador .popup_contents { position: absolute; right:0; top:0; width: 440px; height: 504px; background: rgba(255,255,255,0.7);}
+		#popup_ambassador h1 { cursor:pointer; margin:40px auto 28px; width: 100px; height: 100px; }
+		#popup_ambassador form { width: 328px; margin:0 auto;}
+		#popup_ambassador label {display:block; margin-bottom:15px; overflow:hidden;}
+		#popup_ambassador span { display:inline-block; width: 80px; font-size: 16px; height: 32px; float:left; font-weight: bold;}
+		#popup_ambassador .profile_info { height: 32px;display:inline-block; padding-bottom:4px;  outline:0; border:0; border-bottom:1.5px solid #202429;  background:transparent; width: 240px; float:right;} /*input에 있는 것은 border가 아니라 outline임. outline, border:0 주고, decoration 한다. !!!*/
+		#popup_ambassador .profile_info::placeholder { color:#202429; font-size:14px; text-align: center; }
+		#popup_ambassador label img { width: 32px; height: 32px;}
+		#popup_ambassador .submit {width: 120px; height: 32px; font-size: 15px; background: #FF31A2; border:0; margin:40px auto; display:block;}
+    
+	/* header */
+		header { width:100%; height: 100%;}
+		header .center {margin:0 auto; padding:1.1% 0;}
+		#header { width:100%; height:140px;}
+		.logo { cursor:pointer; width:200px; height:100%; float: left;background:url("../Icon/ZIGZAG-logo.png") no-repeat; background-size:contain; margin-left: 2%; } /*x=242*/
+
+		.search { float: left; margin-left: 12%; margin-top: 1%; width:40%; height: 60px; }
+		.search_bar { float: left; width:100%; height: 60px; box-sizing:border-box; border:none; border-bottom:2px solid #212529; background:transparent; font-size:18px;}
+		.search_btn {  margin-top: 2%;cursor:pointer; float: left; width: 32px; height: 40px; opacity:1; margin-left: -10%;}
+
+		#gnb {float: right; margin:2% auto; width: 24%;}
+		#gnb a {float: left; padding:0 12%;}
+		#gnb a:last-child {padding:0 0 0 12%;}
+		#gnb img.wishlist { cursor:pointer; width: 40px; height: 38.45px;}
+		#gnb img.bag { cursor:pointer; width: 43.86px; height: 40px;}
+		#gnb img.mypage { cursor:pointer; width: 34.29px; height: 40px;}
+	
+		#lnb {width: 100%; height: 100%; background:#212529; z-index:9; position:relative; }
+		#lnb .center {width: 100%; height: 100%;}
+		#lnb .top-menu {width: 75%; height: 80px; margin:0 auto; }
+		#lnb .top-menu li { float:left; width:8.33%; height: 100%; margin:0 auto; }
+		#lnb .top-menu a {display:block; color:#d8d8d8;font-size:18px; line-height:80px; width: 100%; height: 100%; text-align: center; border-bottom:4px solid transparent; }
+
+		#lnb .bottom-menu { position:absolute; left:0; top:100%; width:100%; background:rgba(33,37,41,0.8); z-index:9; display:none;}
+		#lnb .bottom-menu .center {margin:0 auto; width: 75%; }
+		#lnb .bottom-menu ul { padding-top:8px; float:left; width:8.33%; text-align: center; transition:all 0.3s; }
+		#lnb .bottom-menu a { display:block; color:#d8d8d8; font-size:16px; line-height:40px; height: 40px; text-align: center; }
+		#lnb .bottom-menu span a { font-size:14px; height:32px; line-height: 32px; color:#989898;}
+		#lnb .top-menu a:hover, #lnb .top-menu li.on a {color:#FF89B9; border-bottom:6px solid #FF89B9;}
+		#lnb .bottom-menu a:hover, #lnb .bottom-menu li.on a {color:#FF89B9;}
+	
+	/* slider */
+		#slide {/*  position: relative;  */width:100%; height: 100%; margin:0 auto; z-index:1; box-sizing:border-box;}
+		/* #slide .center {position:absolute; left:0; top:0;} */
+		#slide .images {width: 100%; height: 580px; position:relative; overflow:hidden; top:0; left:0;}
+		#slide .images a {display:block; width: 100%; z-index:1; position:absolute; top:0; left:0;	display:none;}
+		#slide .images a:nth-child(1) {display:block;}
+		#slide .images img {width: 100%; }
+		#slide .images a:nth-child(2) img { transform:translateY(-100px); }
+		#slide .images a:nth-child(3) img { transform:translateY(-60px); }
+		#slide .images a:nth-child(4) img { transform:translateY(-100px); }
+		#slide .images a:nth-child(5) img { transform:translateY(-200px); }
+		#slide .buttons { height: 56px; text-align:center; width: 20%; position:absolute; left:40%;}
+		#slide .buttons div { cursor:pointer; display:inline-block; width: 16px; height: 16px; background:#F8DFE7; border-radius:50%; margin:20px 8px; transition:all 0.3s;}
+		#slide .buttons div.on { background:#212529; }
+	
+	/* sponsored */
+		#sponsored {width: 100%; height: 424px; box-sizing:border-box;}
+		#sponsored h2{ font-size:20px; margin-bottom:40px; margin-left: 2%;}
+		#sponsored .items {width: 100%; margin: 0 auto;}
+		#sponsored figure {float:left; margin-right:1%; position: relative; cursor:pointer; width: 15.83%;}
+		#sponsored figure:last-child {float:left; margin-right:0;}
+		#sponsored figure .product { width: 100%; height: 220.5px; background-image:url("../Image/sponsored_1_1.png"); background-repeat:no-repeat; background-size:cover;}
+		#sponsored figure .wish { position: absolute; bottom:98px; right:16px; z-index:5; width:38px; height: 37px; cursor:pointer; background-image:url("../Icon/ZIGZAG-heart_white.png"); 
+		background-repeat: no-repeat; background-size:contain;}
+		/**/ /*하트에 쉐도우 넣는 법?*/
+		#sponsored figcaption a { font-size: 16px;}
+		#sponsored figcaption b { color:#FF89B9; font-weight:normal; margin-right:8px; }
+		#sponsored figcaption span { display:inline-block; margin-left:8px; width:26.32px; height: 24px; background:url("../Icon/ZIGZAG-bag.png") no-repeat; background-size:contain;}
+		#sponsored figcaption ul li {height: 24px; line-height:24px;}
+		#sponsored figcaption ul li:first-child a { font-weight: bold;}
+		#sponsored figure .wish.on {background-image:url("../Icon/ZIGZAG-fullheart_white.png"); }
+		
+		#sponsored figure:nth-child(1) .product {background-image:url("../Image/sponsored_1_1.png");}
+		#sponsored figure:nth-child(2) .product {background-image:url("../Image/sponsored_3_1.png");}
+		#sponsored figure:nth-child(3) .product {background-image:url("../Image/sponsored_5_1.png");}
+		#sponsored figure:nth-child(4) .product {background-image:url("../Image/sponsored_6_1.png");}
+		#sponsored figure:nth-child(5) .product {background-image:url("../Image/sponsored_7_1.png");}
+		#sponsored figure:nth-child(6) .product {background-image:url("../Image/sponsored_9_1.png");}
+
+		#sponsored figure:nth-child(1) .product.on {background-image:url("../Image/sponsored_1_2.png");}
+		#sponsored figure:nth-child(2) .product.on  {background-image:url("../Image/sponsored_3_1.png");}
+		#sponsored figure:nth-child(3) .product.on  {background-image:url("../Image/sponsored_5_2.png");}
+		#sponsored figure:nth-child(4) .product.on  {background-image:url("../Image/sponsored_6_2.png");}
+		#sponsored figure:nth-child(5) .product.on  {background-image:url("../Image/sponsored_7_2.png");}
+		#sponsored figure:nth-child(6) .product.on  {background-image:url("../Image/sponsored_9_2.png");}
+
+	/* best&new */
+		#bestandnew {width: 100%; height: 945px; box-sizing:border-box; text-align: center;} 
+		#bestandnew > div > div {cursor:pointer; width: 49%; height: 945px; display:inline-block; position:relative; overflow:hidden; } /*이미지 잘리는 이유? -> overflow:hidden 때문이었음*/
+		#bestandnew > div > div:first-child {margin-right:1%;}
+		#bestandnew > div > div:first-child h2 {color:#d8d8d8;}
+		#bestandnew img {height:885px;}
+		#bestandnew h2 {text-align: center; margin-bottom:40px; }
+		#bestandnew h3 {position:absolute; bottom:40%; left:10%; font-size:36px; color:#fff; text-shadow: 1px 1px 3px rgba(0,0,0,0.5); width: 75%;} 
+
+	/* youtube */
+		#youtube {width: 100%; height: 644px; box-sizing:border-box; margin-bottom:40px; position:relative;}
+		#youtube h2 { text-align: center; margin-bottom:40px; color:#d8d8d8; font-size:20px; }
+		.youtube_overflow {overflow: hidden; width: 100%;}
+		#youtube .video {width: 76%;height:100%; position:relative; float: left;}
+		#youtube .video * {border:none;} /* 어딘지 모르는 곳에 보더 있어서 전체 잡아서 없애버림!!!*/
+		#youtube .video:after {
+			content:"";
+			position:absolute;
+			left:0;
+			top:0;
+			width:100%;
+			height:100%;
+		}
+		#youtube iframe { width: 100%; height: 580px;}
+		#youtube .ambassadors {float: left; width:20%; margin-left: 3%; margin-top: 20%;}
+		#youtube .ambassadors h3 {font-size:18px; color:#d8d8d8; font-weight:normal; line-height: 32px; }
+		#youtube .ambassadors #apply { cursor:pointer; margin-top:17%; width: 80%; height: 32px; font-size:16px;	border:0; color:#fff; font-weight: bold; background: #FF31A2; border-radius:4px; box-shadow:1px 1px 3px rgba(0,0,0,0.9),-1px -1px 1px rgba(255,255,255,0.9); }
+		#report {width: 100%; height: 100%; margin-top:4%; margin-bottom:20%;}
+		#report h2 {text-align: center; margin-bottom:2%; font-size:20px; }
+		#report img {margin-bottom: 1%; width: 100%;}
+    
+	/* footer */
+		footer {width: 100%; height: 460px; border-top:1px solid #d8d8d8;  text-align: center; font-size: 14px;}
+		#footer_nav { width:446px; height: 197px; margin:40px auto;}
+		#footer_nav ul {float:left; margin-right:16px;}
+		#footer_nav ul:last-child { margin-right:0;}
+		#footer_nav li:first-child { font-weight: bold; }
+		#footer_nav li {line-height:30px; height:30px;}
+		footer h4 {margin-bottom:20px;}
+		footer img {width: 36px; height: 36px; margin-right:64px;}
+		footer img.nomr {margin-right:0;}
+		footer p {line-height:24px; margin-top:20px; }
+
+	/* meta*/
+	  @media all and (max-width:1599px) {
+	    .center {width: 90%;}
+		header .center, #slide .center {width: 100%;}
+	  	#lnb .top-menu {width: 100%; }
+		#gnb a {float: left; padding:0 10%;}
+		#youtube iframe {height: 610px;}
+	  }
+	  @media all and (max-width:1180px) {
+		header .center, #slide .center {width: 100%;}
+		header .center {padding:2% 0;}
+		.search { margin-left: 10%; }
+		#lnb .top-menu {height: 60px;}
+		#lnb .top_menu a {line-height: 60px; font-size: 16px;}
+		#youtube .ambassadors h3 {font-size: 16px;}
+	  }

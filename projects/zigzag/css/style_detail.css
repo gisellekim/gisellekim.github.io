@@ -1,0 +1,264 @@
+
+	@import url('https://fonts.googleapis.com/css2?family=Roboto');
+	* { margin:0; padding:0; box-sizing:border-box;}
+	/* html,body{width: 100%; height: 100%;} */
+	body { width:100%; height:100%; font-family: "Noto Sans", "Roboto", sans-serif; color: #212529; box-sizing:border-box; background-position:0 719px;}
+	li { list-style:none; }
+	a { text-decoration:none; color: #212529; }
+	.center { width:1436px; height:100%; margin:0 auto; }
+	h2 {cursor:pointer;}
+	
+	header { width:100%; height: 100%;}
+		header .center {margin:0 auto; position:relative;}
+		#header { width:100%; height:140px;}
+		.logo { cursor:pointer; width:200px; height:100%; position:absolute; left:0; top:24px; background:url("../Icon/ZIGZAG-logo.png") no-repeat; background-size:contain; } /*x=242*/
+		.search_bar { position:absolute; top:40px; left:362px; width:590px; height: 60px; padding:8px; box-sizing:border-box; border:none; border-bottom:2px solid #212529; background:transparent; font-size:18px;}
+		.search_btn { cursor:pointer; position:absolute; top:48px; left:911px; width: 32px; height: 40px; opacity:1; }
+		#gnb img.wishlist { cursor:pointer;position:absolute; top:50px; left: 1154px; width: 40px; height: 38.45px;}
+		#gnb img.bag { cursor:pointer;position:absolute; top:50px; left: 1289px; width: 43.86px; height: 40px;}
+		#gnb img.mypage { cursor:pointer;position:absolute; top:50px; left: 1396px; width: 34.29px; height: 40px;}
+		#lnb {width: 100%; height: 100%; border-top:1px solid #d8d8d8; border-bottom:1px solid #d8d8d8; z-index:9; }
+		#lnb .top-menu {width: 1436px; height: 80px; position:relative; margin:0 auto; }
+		#lnb .top-menu li { float:left; width:119px; height: 100%; margin:0 auto; }
+		#lnb .top-menu a {display:block; color:#212529; font-size:18px; line-height:80px; width: 100%; height: 100%; text-align: center; border-bottom:4px solid transparent; }
+		#lnb .bottom-menu { position:absolute; left:0; top:220px; width:100%; background:rgba(33,37,41,0.8); z-index:9; display:none;}
+		#lnb .bottom-menu .center {margin:0 auto;}
+		#lnb .bottom-menu ul { padding-top:8px; float:left; width:119px; text-align: center; transition:all 0.3s; }
+		#lnb .bottom-menu a { display:block; color:#d8d8d8; font-size:16px; line-height:40px; height: 40px; text-align: center; }
+		#lnb .bottom-menu span a { font-size:14px; height:32px; line-height: 32px; color:#989898;}
+		#lnb .top-menu a:hover, #lnb .top-menu li.on a {color:#FF89B9; border-bottom:6px solid #FF89B9;}
+		#lnb .bottom-menu a:hover, #lnb .bottom-menu li.on a {color:#FF89B9;}
+	
+	
+    #popup { display:none; position:fixed; left:0; top:0; width: 100%; height: 100%; background: rgba(0,0,0,0.5); z-index:99; box-shadow:1px 1px 2px rgba(0,0,0,0.7); }
+		#popup_photo_review { width: 40%; height: 40%; position: absolute; left:35%; top:25%;}
+		#popup_photo_review section {width: 100%; height: 100%; position: relative;}
+		 #popup_photo_review .close { cursor:pointer; font-size:40px; color: #fff; position: absolute; right:5px; top:5px; border:0; background:transparent;}
+		#popup_photo_review .popup_contents section img { display:none; cursor:pointer; width: 100%; height: 100%; }
+
+	#shop { margin-top:40px; width: 100%; height: 739px;}
+		#product_image {float:left; width: 709px; height: 620px; position: relative;}
+			#detail_container {width: 100%; height: 636px;}
+				#thumbnail_detail {position: relative; left:0; top:-27px; width: 105px; height: 674px; }
+					#thumbnail_detail span { width:20px; height: 11px; }
+					#thumbnail_detail span img { width:20px; height: 11px; }
+					#thumbnail_detail .up {cursor:pointer; position:absolute; left:42.5px; top:0;} 
+					#thumbnail_detail .down {cursor:pointer; position:absolute; left:42.5px; bottom:0;} 
+					#thumbnail_detail .container { overflow: hidden; width:105px; height: 620px; position: relative; top:27px; left:0; }
+					#thumbnail_detail .container ul { position:absolute; top:0; left:0; width: 105px; ;height: 12400px; }
+					#thumbnail_detail .thumb { width:105px; height:110px; margin-top:17.4px; cursor:pointer; }
+					#thumbnail_detail .thumb.mt0{ margin-top:0 }
+				#main_image {position: absolute; left:121px; top:0; width: 588px; height: 620px; overflow:hidden;}
+					#main_image p {display:none;}
+					#main_image img {width: 588px; height: 620px;}
+			
+			#thumbnail_review {position: relative; top:0; left:93px; width: 642px; height: 105px;}
+				#thumbnail_review .prev {cursor:pointer; position: absolute; left:0; top:42.5px; }
+				#thumbnail_review .next {cursor:pointer; position: absolute; right:0; top:42.5px; }
+				#thumbnail_review span { height:20px; width: 11px; }
+				#thumbnail_review span img { height:20px; width: 11px; }
+				#thumbnail_review  .container { overflow: hidden; position:relative; left:27px; height:105px; width: 590px;}
+				#thumbnail_review .container ul { position: absolute; width:2360px;} /* 총길이를 선택해야한다. */
+				#thumbnail_review .container .thumb { float: left; width:105px; height:105px; margin-left:16px; cursor:pointer; }
+				#thumbnail_review .container .thumb.ml0{ margin-left:0 }
+
+		#product_info {float:right; width: 589px; height: 668px;}
+		#option { padding:8px; }
+			#option h1 { font-size: 20px; margin-bottom:18px; }
+			#option h2 { font-size: 18px; font-weight: normal; margin-bottom:18px; }
+			#option h3 { font-size: 16px; font-weight: normal; margin-bottom:36px; }
+			#option table {font-size: 16px; width: 468px; height: 100%; margin-bottom:28px;}
+			#option table tr {height: 40px;}
+			#option table .th {width: 121px;}
+			/* table .td {width: 141px; vertical-align:center;} */
+			#option table b {color:#FF89B9; font-weight:normal; margin-right:8px;}
+			#option table .card { cursor:pointer; padding-top:1px; border:1px solid #d8d8d8; font-size: 14px; text-align:center; width: 120px; height: 22px; box-sizing:border-box; border-radius:4px; }
+			#option table span { margin-right:8px; display:inline-block; border:1px solid #d8d8d8; border-radius:50%; background:#fff; position:relative;}
+			#option table .th_color {height: 60px;}
+			#option table input {display:none;}
+			#option table label { cursor:pointer; float:left; border:2px solid transparent;}
+			#option table label:nth-child(3n) {margin-top:2px; margin-right:40px;}
+			#option table .color {display:inline-block; width: 28px; height: 28px; border:1px solid #d8d8d8; border-radius:50%; background:#B8B099; background-clip:content-box;padding:2px; margin-right:16px; }
+			#option table .color.white {background:#fff; }
+			#option table .option_size {width:260px; padding-left:16px; height: 32px;}
+			#option table input:checked + label {border:2px solid #FF89B9;}
+
+		#output { border-top:1px solid #d8d8d8; padding-top:28px;  }
+			#output .amount {display: none; height: 36px; padding:0 16px; box-sizing:border-box;}
+			#output .amount tr{ height: 20px;}
+			#output .amount td {width: 121px; height: 100%; font-weight: normal; /* line-height: 10px; */}
+			#output table .output_color { font-weight: bold; font-size: 16px; }
+			#output table .output_size {font-weight: normal; }
+			#output .ouput_del {width: 100%; height: 100%;}
+			#output .output_del span { cursor:pointer; display: block; width: 12px; height: 12px; background:url("../Icon/del.png") no-repeat; background-size:contain; }
+			#output .output_qty {overflow: hidden;}
+			#output .output_qty h5 {float: left; font-size: 16px; padding:0 16px; }
+			#output .output_qty span { cursor:pointer; float: left; width: 28px;height: 28px;background:url("../Icon/output_more.png") no-repeat; background-size:contain;}
+			#output .output_qty .output_less {background:url("../Icon/output_less.png") no-repeat; background-size:contain;}
+			#output .output_price {text-align: right;}
+			#output .output_qty .output_less:hover, #output .output_qty .output_less.on {background:url("../Icon/output_less_pi.png") no-repeat;}
+			#output .output_qty .output_more:hover,#output .output_qty .output_more.on {background:url("../Icon/output_more_pi.png") no-repeat;}
+
+			#total_price {text-align: right; margin-top: 16px;} /* 원래는 padding-top:28px*/
+				#total_price .price {display:inline-block; width:121px; padding-right: 16px; box-sizing:border-box;}
+		#button_options { margin-top:28px; width: 100%; height: 56px;}
+			#button_options div {width: 286px; height: 100%; border:1px solid #d8d8d8;line-height:56px; text-align: center; cursor:pointer;}
+			#button_options .bag {float:left;}
+			#button_options .discount {float:right;}
+			#button_buy {cursor:pointer; margin-top: 16px; width: 588px; height: 56px; background: #FF89B9; color:#fff; text-align: center; line-height: 56px;}
+		#button_3rd_party {height: 48px; width: 589px; height: 48px; margin-top: 16px;}
+			#button_3rd_party img {cursor:pointer; width: 278.5px; height: 100%;}
+			.button_kpay {float:left; margin-right:16px; margin-left: 8px;}
+			.button_npay {float:left;margin-right:8px;}
+
+	#popup_checkout {display:none; position:fixed; left:0; top:0; width: 100%; height: 100%; z-index:99; }
+		#popup_confirm { padding:40px; box-sizing:border-box; width: 588px; height: 620px; position: absolute; left:35%; top:15%;background: #fff;box-shadow:1px 1px 2px rgba(0,0,0,0.7); }
+		.popup_co_contents {width: 100%; height: 100%; position: relative;}
+		#popup_confirm .close { cursor:pointer; font-size:40px; color: #d8d8d8; position: absolute; right:30px; top:20px; border:0; background:transparent;}
+		.popup_img { width: 226px; height: 240px; position:absolute; left:141px; top:135px; background: url("../Image/popup_img.png")no-repeat; background-size:contain;}
+		.popup_co_contents h1 {font-size: 32px; text-align: center; margin-bottom:20px; }
+		.popup_co_contents h2 {font-weight: normal;font-size: 16px; text-align: center;}
+		.popup_line {width:226px; height:1.5px; background: #d8d8d8; margin:20px auto; }
+		#popup_checkout .amount {position: absolute; left:130px; bottom:110px; margin:0 auto; height: 36px; padding:0 16px; width: 226px ;box-sizing:border-box;}
+		#popup_checkout .amount tr{ height: 20px;}
+		#popup_checkout .amount td {width: 121px; height: 100%; font-weight: normal; line-height: 10px;text-align: center;}
+		#popup_checkout table .output_color { font-weight: bold; font-size: 16px; }
+		#popup_checkout table .output_size {font-weight: normal; }
+		#popup_checkout .output_qty h5 {font-size: 16px; }
+		#popup_checkout .output_qty span { display:none;}
+		.popup_co_button {cursor:pointer; position: absolute; left: 100px; bottom:20px; width: 305px; height: 56px; background:#FF89B9; color: #fff; font-size: 16px; line-height: 56px; text-align: center;	box-shadow:1px 1px 2px rgba(0,0,0,0.3);}
+		
+
+	.index {width: 100%; height: 38px; border-bottom:1px solid #d8d8d8; margin: 60px auto 40px;}
+		.index ul {width: 37%; height: 38px; margin:0 auto;}
+		.index li {float: left;}
+		.index a {display: block; padding:0 20px 14px; font-size: 14px;border-bottom:2px solid transparent;}
+		.index a:hover, .index li.on a {color:#FF89B9; border-bottom:4px solid #FF89B9;}
+
+	#related_items {width: 100%; height: 1821px; box-sizing:border-box; }
+		#related_items > section {width: 100%; height: 485px; box-sizing:border-box;}
+		#related_items h2{ margin-top: 40px; font-size:20px; text-align: center;}
+		#related_items section:first-child h2 {margin-top:0;}
+		#related_items p {display: block; font-size:18px; text-align: center; margin:20px auto 40px; }
+		.items {width: 1436px;}
+		figure {float:left; margin-right:16px; position: relative; cursor:pointer;}
+		figure:last-child {float:left; margin-right:0;}
+		figure .product { width: 226px; height: 282.5px; background-image:url("../Image/recommendation_1_1.png"); background-repeat:no-repeat; background-size:cover;}
+		figure .wish { position: absolute; bottom:98px; right:16px; z-index:5; width:38px; height: 37px; cursor:pointer; background-image:url("../Icon/ZIGZAG-heart_white.png"); 
+		background-repeat: no-repeat; background-size:contain;}
+		/**/ /*하트에 쉐도우 넣는 법?*/
+		figcaption a { font-size: 16px;}
+		figcaption b { color:#FF89B9; font-weight:normal; margin-right:8px; }
+		figcaption span { display:inline-block; margin-left:8px; width:26.32px; height: 24px; background:url("../Icon/ZIGZAG-bag.png") no-repeat; background-size:contain;}
+		figcaption ul {margin-top: 8px;}
+		figcaption ul li {height: 24px; line-height:24px;}
+		figcaption ul li:first-child a { font-weight: bold;}
+		figure .wish.on {background-image:url("../Icon/ZIGZAG-fullheart_white.png"); }
+		#best_item {height: 651px;}
+		#best_item a {display: block; margin: 0 auto;}
+        #best_item img {display: block; margin: 0 auto;}
+        
+		
+		#recommendation figure:nth-child(1) .product {background-image:url("../Image/recommendation_1_1.png");}
+		#recommendation figure:nth-child(2) .product {background-image:url("../Image/recommendation_2_1.png");}
+		#recommendation figure:nth-child(3) .product {background-image:url("../Image/recommendation_3_1.png");}
+		#recommendation figure:nth-child(4) .product {background-image:url("../Image/recommendation_4_1.png");}
+		#recommendation figure:nth-child(5) .product {background-image:url("../Image/recommendation_5_1.png");}
+		#recommendation figure:nth-child(6) .product {background-image:url("../Image/recommendation_6_1.png");}
+		#recommendation figure:nth-child(1) .product.on {background-image:url("../Image/recommendation_1_2.png");}
+		#recommendation figure:nth-child(2) .product.on  {background-image:url("../Image/recommendation_2_2.png");}
+		#recommendation figure:nth-child(3) .product.on  {background-image:url("../Image/recommendation_3_2.png");}
+		#recommendation figure:nth-child(4) .product.on  {background-image:url("../Image/recommendation_4_2.png");}
+		#recommendation figure:nth-child(5) .product.on  {background-image:url("../Image/recommendation_5_2.png");}
+		#recommendation figure:nth-child(6) .product.on  {background-image:url("../Image/recommendation_6_2.png");}
+
+		#with figure:nth-child(1) .product {background-image:url("../Image/with_1_1.png");}
+		#with figure:nth-child(2) .product {background-image:url("../Image/with_2_1.png");}
+		#with figure:nth-child(3) .product {background-image:url("../Image/with_3_1.png");}
+		#with figure:nth-child(4) .product {background-image:url("../Image/with_4_1.png");}
+		#with figure:nth-child(5) .product {background-image:url("../Image/with_5_1.png");}
+		#with figure:nth-child(6) .product {background-image:url("../Image/with_6_1.png");}
+		#with figure:nth-child(1) .product.on {background-image:url("../Image/with_1_2.png");}
+		#with figure:nth-child(2) .product.on  {background-image:url("../Image/with_2_2.png");}
+		#with figure:nth-child(3) .product.on  {background-image:url("../Image/with_3_2.png");}
+		#with figure:nth-child(4) .product.on  {background-image:url("../Image/with_4_2.png");}
+		#with figure:nth-child(5) .product.on  {background-image:url("../Image/with_5_2.png");}
+		#with figure:nth-child(6) .product.on  {background-image:url("../Image/with_6_2.png");}
+	#model_info {width:100%; height: 441px; box-sizing:border-box; margin-bottom: 80px;}
+		#model_info h2{ font-size:20px; text-align: center;}
+		.models {width:708px; margin:0 auto;}
+		.models figure {float:left; width: 346px; margin-right: 16px;}
+		.models figure:last-child {margin-right: 0;}
+		.models h3 {color: #707070; font-size: 14px; margin:20px auto 8px; text-align: center; font-weight: normal; }
+		.models p {font-size: 14px; text-align: center; }
+	#size_info {width: 100%; height: 667px; box-sizing:border-box; position: relative; padding:0 3%; }
+		#size_info:before {content:""; position: absolute; top:70px; left: 50%;	width: 1px; height: 572px; background: #d8d8d8; }
+		#size_info h2 { font-size:20px; text-align: center; margin-bottom: 40px;}
+		.info_container { width: 100%; height: 100%; overflow: hidden;}
+		#size_info .fit_info {float:left; width: 630px; margin-left:140px;}		#size_info .detail_info {float:right;width: 700px;}
+		#size_info section h3 {font-size: 18px; margin-bottom: 8px;}
+		#size_info section p {font-size: 16px; color: #707070; line-height: 28px;}
+		#size_info .fit_info img {display: block; margin: 20px auto 50px; width: 255px; height: 256px;}
+		.fit_info table {width: 586px; height: 165px;font-size: 16px; border:1px 
+		solid #d8d8d8; }
+		#size_info table td, #size_info  table th {border-bottom:1px solid #d8d8d8; text-align: center;}
+		#size_info table tr:last-child td {border-bottom:0; }
+		#size_info .first {background: #d8d8d8;}
+		#size_info section.detail_info h3 {margin-bottom: 20px;}
+		.detail_info table {width: 589px; height: 241px; font-size: 16px; border:1px solid #d8d8d8; margin-top: 40px;}
+	#review {width: 100%; height: 100%; margin:0 auto;}
+		#review .center {width: 1194px; height: 1346px;}
+		.review_intro {width: 100%; }
+        .review_intro h2 {font-size:20px; text-align: center; margin-bottom: 20px;}
+		.review_intro p {font-size: 18px; text-align: center;}
+		.review_filter {width: 953px; height: 28px; margin:40px auto;}
+			.review_filter select { padding-left:8px; box-sizing:border-box; float:left; width: 105px; height: 100%; margin-right:107px;}
+			.review_filter select:last-child {margin-right: 0;}
+		.review_tab {width: 640px;height: 20px;}
+			.review_tab ul {width:100% height: 18px;}
+			.review_tab li {float:left; width: 210px; }
+			.review_tab a {display: block; font-weight: bold; font-size: 16px; border-right: 1px solid #D8D8D8; padding:0 20px; text-align: center;}
+			.review_tab a span {font-size: 14px; font-weight: normal;}
+			.review_tab li:last-child a {border-right: 0;}
+		.review_contents {width: 100%; height: 1160px;}
+			.reviews {width: 100%; height: 980px;}
+				.reviews > div {width: 100%; height: 340px;border-top:1px solid #d8d8d8; margin:40px auto 40px;}
+				.reviews > div:first-child {margin:20px auto 40px;}
+				.reviews h4, .reviews h5, .reviews p{font-size: 14px; margin-bottom:8px;font-weight: normal;}
+				.reviews h5 {color:#d8d8d8;}
+				.reviews .more {cursor:pointer;}
+				.review_left { float:left; width: 60%; }
+				.stars {width: 132px; height: 18.7px; margin-right: 16px; display: inline-block; margin-top: 40px;}
+				.stars span {display: inline-block; padding-right:8px; width:20px; height:18.7px; background:url(" ../Icon/star.png")no-repeat; background-size:contain;}
+				.stars span:last-child {padding-right: 0;}
+				.and {display: inline-block; margin-right: 16px; background:#d8d8d8; width: 16px; height: 1px; margin-bottom:4px;  }
+				.review_value {display: inline-block;}
+				.reviews img {cursor:pointer; padding:8px 0 16px; display: inline-block; margin-right: 16px;}
+				.reviews b {color:#212529;}
+				.review_evaluation {font-size: 14px;height: 20px; line-height:20px; }
+				.review_evaluation b { display: inline-block; margin-right: 16px; }
+				.review_buttons {display: inline-block; width: 280px; height: 20px;}
+				.review_buttons ul {width: 100%; height: 100%; overflow: hidden;}
+				.review_buttons li {float: left;}
+				.review_buttons a {cursor:pointer; display: block; width: 80px; height: 20px; line-height: 20px; border:1px solid #212529; margin-right:16px; text-align: center; background:#fff; }
+				.review_buttons li:last-child a {padding-left:6px; color: #fff; width: 38px; height: 20px; border:0; background:url(" ../Icon/review_update.png")no-repeat; background-size:contain;}
+				.review_buttons li:hover a, .review_buttons li.on a {background:#212529; color: #fff; }
+				.review_right {float:right; width: 226px; margin-top:40px;}
+					.review_name {border-bottom: 1px solid #d8d8d8; padding-bottom:20px;}
+					.review_status {padding-top:20px;}
+		.review_bottom {width: 100%; height: 20px; padding-top:40px; border-top:1px solid #d8d8d8;}
+			.review_bottom ul {overflow:hidden; width: 460px; height: 24px; margin:0 auto; }
+			.review_bottom li {width: 24px; height: 24px; margin:0 20px; background:#fff; border-radius:50%; float:left;}
+			.review_bottom a{display: block; cursor:pointer; text-align: center; }
+			.review_bottom li:hover, .review_bottom li:hover.on {background: #d8d8d8;}
+
+	footer {width: 100%; height: 460px; border-top:1px solid #d8d8d8;  text-align: center; font-size: 14px; margin-top: 210px;}
+		#footer_nav { width:446px; height: 197px; margin:40px auto;}
+		#footer_nav ul {float:left; margin-right:16px;}
+		#footer_nav ul:last-child { margin-right:0;}
+		#footer_nav li:first-child { font-weight: bold; }
+		#footer_nav li {line-height:30px; height:30px;}
+		footer h4 {margin-bottom:20px;}
+		footer img {width: 36px; height: 36px; margin-right:64px;}
+		footer img.nomr {margin-right:0;}
+		footer p {line-height:24px; margin-top:20px; }
