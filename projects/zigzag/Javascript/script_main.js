@@ -76,9 +76,4 @@
 		},function(){
 			$(this).removeClass('on');
 		});
-
-		/* site 이동 */
-		$('.bestItem').click(function(){
-        $(location).attr('href','index_detail.html');
-		});
 	});
