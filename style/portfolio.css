@@ -362,46 +362,49 @@
   	}
 
   	/*about2*/
+  	#about2 {
+  	    display: flex;
+  	    flex-direction: column;
+  	    justify-content: space-between;
+  	}
+
   	#about2 p {
   	    display: none;
   	    cursor: pointer;
   	    font-size: calc(16px + 0.8vw);
-  	    width: 90%;
+  	    width: 85%;
   	    margin: 1% 2%;
   	    color: #515151;
   	}
 
   	#about2 p.show {
   	    display: block;
+  	    text-transform: uppercase;
   	}
 
   	#about2 .about_kor {
-  	    height: 29%;
   	    line-height: 52px;
   	    font-size: 20px;
-  	    width: 70%;
   	    font-family: 'NotoSerifKR';
   	}
 
   	#about2 .experience {
   	    overflow: hidden;
-  	    margin-top: 20%;
-  	    margin-left: 2%;
+  	    display: flex;
+  	    padding: 5% 2%;
   	}
 
   	#about2 ul {
-  	    float: left;
-  	    width: 30%;
+  	    width: 45%;
+  	}
+
+  	#about2 ul:first-child {
+  	    margin-right: 2%
   	}
 
   	#about2 ul li {
   	    font-size: calc(14px + 0.1vw);
   	    color: #707070;
-  	}
-
-  	#about2 ul:last-child {
-  	    width: 60%;
-  	    margin-left: 2%;
   	}
 
   	/*work*/
@@ -752,10 +755,6 @@
   	        top: 15%;
   	    }
 
-  	    #about2 ul {
-  	        width: 35%;
-  	    }
-
   	    #contact .skill {
   	        width: 38%;
   	    }
@@ -858,19 +857,14 @@
   	    }
 
   	    #about2 .experience {
+  	        flex-direction: column;
   	        margin-top: 10%;
   	        margin-bottom: 10%;
   	    }
 
   	    #about2 ul {
   	        float: none;
-  	        width: 90%;
-  	    }
-
-  	    #about2 ul:last-child {
-  	        width: 90%;
-  	        margin-left: 0;
-  	        margin-top: 2%;
+  	        width: 100%;
   	    }
 
   	    #work .text_group {
