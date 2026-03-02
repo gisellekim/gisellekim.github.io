@@ -271,17 +271,6 @@
   	    overflow: visible;
   	}
 
-  	#home .arrow {
-  	    width: 90px;
-  	    height: 34px;
-  	    position: absolute;
-  	    bottom: 25%;
-  	    left: 20%;
-  	    background: url("../Image/arrow.svg") no-repeat;
-  	    background-position: 0 0;
-  	    background-size: cover;
-  	    animation: arrow 1s linear infinite;
-  	}
 
   	#home h1 {
   	    font-weight: normal;
@@ -295,20 +284,6 @@
   	    position: absolute;
   	    right: -20%;
   	    top: 0%;
-  	}
-
-  	@keyframes arrow {
-  	    0% {
-  	        transform: translateX(20%);
-  	    }
-
-  	    50% {
-  	        transform: translateX(0%);
-  	    }
-
-  	    100% {
-  	        transform: translateX(20%);
-  	    }
   	}
 
   	#home .hover-over {
@@ -841,10 +816,6 @@
   	        background-position: center center;
   	    }
 
-  	    #home .arrow {
-  	        display: none;
-  	    }
-
   	    #home .keywords {
   	        top: 35%;
   	        left: 0;
@@ -1071,11 +1042,6 @@
 
   	    #home .hover-image {
   	        display: none;
-  	    }
-
-  	    #home .arrow {
-  	        width: 8px;
-  	        height: 4px;
   	    }
 
   	    #about1 .mouse {
