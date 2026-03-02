@@ -164,7 +164,7 @@ window.onload = function () {
     $("#wrap").addClass("on")
 
     /* scrolling amount */
-    $("#wrap").hScroll(70)
+    $("#wrap").hScroll(5)
 
     /* gnb fixed (horizontal) */
     $(".gnb_wrapper").click(function () {
@@ -271,54 +271,6 @@ window.onload = function () {
       return false
     })
   }
-
-  /*skill -delete*/
-  /*		 $(window).scroll(function(){						
-						var contactOl = $('#work6 ul').offset().left;
-						var ol = $(window).scrollLeft();
-						//	console.log(ol);
-						if (ol > contactOl){ 
-	 
-								draw(100, '.progress', '#ec0');
-						}
-						var contactOT = $('#work6 ul').offset().top;
-						var ot = $('#wrap').scroll().top;
-						if (ot > contactOT){ 
-							draw(100, '.progress', '#ec0');
-						}
-					 }); */
-
-  /*$('#contact').mouseenter(function(){
-						var startColor = '#fff';
-						var endColor = '#ec0';
-						$('.progress').each(function(i) {
-							var circle = new ProgressBar.Circle(this, {
-								color: startColor,
-								easing: 'linear',
-								strokeWidth: 8,
-								duration: 1500,
-								text: {
-									value: '0'
-								}
-							});
-							
-							var value = ($(this).attr('value') / 100);
-
-							circle.animate(value, {
-								from: {
-									color: startColor
-								},
-								to: {
-									color: endColor
-								},
-								step: function(state, circle, bar) {
-									circle.path.setAttribute('stroke', state.color);
-									console.log(circle);
-									circle.setText((circle.value() * 100).toFixed(0));
-								}
-							});
-						});
-				});*/
 
   $(window).trigger("resize")
 }
