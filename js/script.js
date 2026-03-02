@@ -164,7 +164,7 @@ window.onload = function () {
     $("#wrap").addClass("on")
 
     /* scrolling amount */
-    $("#wrap").hScroll(5)
+    $("#wrap").hScroll(15)
 
     /* gnb fixed (horizontal) */
     $(".gnb_wrapper").click(function () {
